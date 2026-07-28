@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+إدارة الوضع الوظيفي | صندوق المعونة الاجتماعية
+</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<!-- CSS -->
+<link href="../assets/css/animations.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet"/>
+<!-- CSS -->
+<link href="../assets/css/job-status.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- ================= SIDEBAR ================= -->
+<div id="app-sidebar"></div>
+<!-- ================= MAIN ================= -->
+<main class="main-content">
+<!-- ================= HEADER ================= -->
+<div data-search="ابحث عن موظف..." data-subtitle="إدارة التعيين والتعاقد والحالات الوظيفية للموظفين" data-title="إدارة الوضع الوظيفي" id="app-header"></div>
+<!-- ================= JOB STATUS DASHBOARD ================= -->
+<section class="dashboard">
+<!-- ================= WELCOME BOX ================= -->
+<div class="welcome-box">
+<div>
+<h2>
+<i class="fa-solid fa-briefcase"></i> الوضع الوظيفي
+</h2>
+<p>
+
+إدارة كامل التاريخ الوظيفي للموظف
+<br/>
+
+التعيين - النقل - تغيير الحالة - إنهاء الخدمة
+
+</p>
+</div>
+<div class="date">
+<i class="fa-regular fa-calendar-days"></i>
+<span>
+20 يوليو 2026
+</span>
+</div>
+</div>
+<!-- ================= STATISTICS CARDS ================= -->
+<div class="cards">
+<div class="card">
+<div class="card-icon green">
+<i class="fa-solid fa-user-check"></i>
+</div>
+<div class="card-info">
+<h3>
+على رأس العمل
+</h3>
+<span>
+950 موظف
+</span>
+</div>
+</div>
+<div class="card">
+<div class="card-icon blue">
+<i class="fa-solid fa-file-signature"></i>
+</div>
+<div class="card-info">
+<h3>
+المتعاقدون
+</h3>
+<span>
+120 موظف
+</span>
+</div>
+</div>
+<div class="card">
+<div class="card-icon orange">
+<i class="fa-solid fa-arrows-turn-to-dot"></i>
+</div>
+<div class="card-info">
+<h3>
+عمليات النقل
+</h3>
+<span>
+35 عملية
+</span>
+</div>
+</div>
+<div class="card">
+<div class="card-icon red">
+<i class="fa-solid fa-user-slash"></i>
+</div>
+<div class="card-info">
+<h3>
+منتهية خدمتهم
+</h3>
+<span>
+18 موظف
+</span>
+</div>
+</div>
+</div>
+<!-- ================= JOB CONTENT ================= -->
+<div class="dashboard-content">
+<!-- ================= LEFT SECTION ================= -->
+<div class="table-section">
+<div class="section-header">
+<h2>
+السجل الوظيفي للموظف
+</h2>
+<button class="add-btn" onclick="openJobModal()">
+<i class="fa-solid fa-plus"></i>
+
+
+تعيين جديد
+
+
+
+</button>
+</div>
+<!-- EMPLOYEE INFO -->
+<div class="employee-box">
+<div class="employee-avatar">
+<i class="fa-solid fa-user-tie"></i>
+</div>
+<div class="employee-data">
+<h3>
+أحمد خالد المصري
+</h3>
+<p>
+الرقم الذاتي: 100234
+</p>
+<p>
+الوحدة التنظيمية: مديرية الشؤون الاجتماعية
+</p>
+<p>
+الحالة الحالية:
+<span class="current-status">
+على رأس العمل
+</span>
+</p>
+</div>
+</div>
+<!-- ================= JOB HISTORY ================= -->
+<div class="section-header">
+<h2>
+التاريخ الوظيفي
+</h2>
+</div>
+<div class="job-history">
+<!-- ITEM 1 -->
+<div class="job-card">
+<div class="job-icon green-bg">
+<i class="fa-solid fa-user-plus"></i>
+</div>
+<div class="job-info">
+<h3>
+تعيين جديد
+</h3>
+<p>
+التاريخ: 01/01/2018
+</p>
+<p>
+الفئة: الأولى
+</p>
+<p>
+الدرجة: الثالثة
+</p>
+<p>
+المرتبة: موظف
+</p>
+</div>
+<div class="actions">
+<button class="edit">
+<i class="fa-solid fa-pen"></i>
+</button>
+<button class="delete">
+<i class="fa-solid fa-trash"></i>
+</button>
+</div>
+</div>
+<!-- ITEM 2 -->
+<div class="job-card">
+<div class="job-icon blue-bg">
+<i class="fa-solid fa-arrows-left-right"></i>
+</div>
+<div class="job-info">
+<h3>
+نقل داخلي
+</h3>
+<p>
+التاريخ: 15/06/2021
+</p>
+<p>
+من:
+مديرية الإدارة
+</p>
+<p>
+إلى:
+مديرية الشؤون الاجتماعية
+</p>
+</div>
+<div class="actions">
+<button class="edit">
+<i class="fa-solid fa-pen"></i>
+</button>
+<button class="delete">
+<i class="fa-solid fa-trash"></i>
+</button>
+</div>
+</div>
+<!-- ITEM 3 -->
+<div class="job-card">
+<div class="job-icon orange-bg">
+<i class="fa-solid fa-rotate"></i>
+</div>
+<div class="job-info">
+<h3>
+تغيير حالة وظيفية
+</h3>
+<p>
+التاريخ: 10/03/2024
+</p>
+<p>
+الحالة:
+مثبت
+</p>
+</div>
+<div class="actions">
+<button class="edit">
+<i class="fa-solid fa-pen"></i>
+</button>
+<button class="delete">
+<i class="fa-solid fa-trash"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT PANEL ================= -->
+<div class="right-panel">
+<!-- ================= ACTIVITY ================= -->
+<div class="activity-box">
+<div class="section-header">
+<h2>
+آخر العمليات الوظيفية
+</h2>
+</div>
+<div class="activity">
+<i class="fa-solid fa-user-plus"></i>
+<div>
+<h4>
+تم تسجيل تعيين جديد
+</h4>
+<span>
+منذ 10 دقائق
+</span>
+</div>
+</div>
+<div class="activity">
+<i class="fa-solid fa-arrows-left-right"></i>
+<div>
+<h4>
+تم تنفيذ عملية نقل داخلي
+</h4>
+<span>
+منذ ساعة
+</span>
+</div>
+</div>
+<div class="activity">
+<i class="fa-solid fa-file-signature"></i>
+<div>
+<h4>
+تم تغيير حالة موظف
+</h4>
+<span>
+اليوم
+</span>
+</div>
+</div>
+</div>
+<!-- ================= QUICK ACTIONS ================= -->
+
+<!-- ================= ALERTS ================= -->
+
+</div>
+<!-- END RIGHT PANEL -->
+</div>
+<!-- END DASHBOARD CONTENT -->
+</div><div class="side-by-side-row">
+<div class="quick-actions">
+<div class="section-header">
+<h2>
+الإجراءات السريعة
+</h2>
+</div>
+<button onclick="openJobModal()">
+<i class="fa-solid fa-user-plus"></i>
+
+
+
+تعيين جديد
+
+
+
+</button>
+<button>
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+
+
+نقل داخلي
+
+
+
+</button>
+<button>
+<i class="fa-solid fa-earth-americas"></i>
+
+
+
+نقل خارجي
+
+
+
+</button>
+<button>
+<i class="fa-solid fa-user-gear"></i>
+
+
+
+تغيير حالة وظيفية
+
+
+
+</button>
+<button>
+<i class="fa-solid fa-user-xmark"></i>
+
+
+
+إنهاء خدمة
+
+
+
+</button>
+</div>
+<div class="alerts">
+<div class="section-header">
+<h2>
+التنبيهات
+</h2>
+</div>
+<div class="alert warning">
+<i class="fa-solid fa-triangle-exclamation"></i>
+<p>
+
+يوجد 12 موظف يحتاجون تحديث الحالة الوظيفية.
+
+</p>
+</div>
+<div class="alert warning">
+<i class="fa-solid fa-clock"></i>
+<p>
+
+يوجد 5 قرارات نقل بانتظار الاعتماد.
+
+</p>
+</div>
+<div class="alert success">
+<i class="fa-solid fa-circle-check"></i>
+<p>
+
+تم حفظ السجل الوظيفي بنجاح.
+
+</p>
+</div>
+</div>
+</div></section>
+</main>
+<!-- ================= JOB MODAL ================= -->
+<div class="modal" id="jobModal">
+<div class="modal-content">
+<div class="modal-header">
+<h2>
+إضافة حركة وظيفية
+</h2>
+<button onclick="closeJobModal()">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="form-grid">
+<div class="form-group">
+<label>
+نوع العملية
+</label>
+<select>
+<option>
+تعيين جديد
+</option>
+<option>
+نقل داخلي
+</option>
+<option>
+نقل خارجي
+</option>
+<option>
+تغيير حالة
+</option>
+<option>
+إنهاء خدمة
+</option>
+<option>
+إعادة تعيين
+</option>
+</select>
+</div>
+<div class="form-group">
+<label>
+التاريخ
+</label>
+<input type="date"/>
+</div>
+<div class="form-group">
+<label>
+الفئة
+</label>
+<input placeholder="الفئة" type="text"/>
+</div>
+<div class="form-group">
+<label>
+الدرجة
+</label>
+<input placeholder="الدرجة" type="text"/>
+</div>
+<div class="form-group">
+<label>
+المرتبة
+</label>
+<input placeholder="المرتبة" type="text"/>
+</div>
+<div class="form-group">
+<label>
+الحالة الوظيفية
+</label>
+<select>
+<option>
+على رأس العمل
+</option>
+<option>
+إجازة
+</option>
+<option>
+موقوف
+</option>
+<option>
+منتهية الخدمة
+</option>
+</select>
+</div>
+</div>
+<div class="modal-footer">
+<button class="save-btn">
+<i class="fa-solid fa-save"></i>
+
+
+حفظ
+
+
+
+</button>
+<button class="cancel-btn" onclick="closeJobModal()">
+
+
+
+إلغاء
+
+
+
+</button>
+</div>
+</div>
+</div>
+<!-- ================= JAVASCRIPT ================= -->
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/animations.js"></script>
+<script src="../assets/js/job-status.js"></script>
+</body>
+</html>

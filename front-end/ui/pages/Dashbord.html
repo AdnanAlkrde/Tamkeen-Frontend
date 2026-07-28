@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>لوحة التحكم | صندوق المعونة الاجتماعية</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/Dashbord.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div id="app-sidebar"></div>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <div id="app-header" data-title="لوحة التحكم" data-subtitle="مرحباً بك في منصة صندوق المعونة الاجتماعية" data-search="ابحث عن موظف أو تقرير..."></div>
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="dashboard">
+
+            <div class="welcome-box">
+
+                <div>
+
+                    <h2><i class="fa-solid fa-hand-sparkles"></i> مرحباً بك</h2>
+
+                    <p>
+                        وزارة الشؤون الاجتماعية والعمل
+                        <br>
+                        صندوق المعونة الاجتماعية
+                    </p>
+
+                </div>
+
+                <div class="date">
+
+                    <i class="fa-regular fa-calendar-days"></i>
+
+                    <span>13 يوليو 2026</span>
+
+                </div>
+
+            </div>
+
+            <!-- بداية بطاقات الإحصائيات -->
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>إجمالي الموظفين</h3>
+
+                        <h2>243</h2>
+
+                        <span>+12 هذا الشهر</span>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>المعاملات المالية</h3>
+
+                        <h2>1,352</h2>
+
+                        <span>آخر تحديث اليوم</span>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>التقارير</h3>
+
+                        <h2>58</h2>
+
+                        <span>تم إنشاؤها هذا الأسبوع</span>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-icon red">
+                        <i class="fa-solid fa-user-clock"></i>
+                    </div>
+
+                    <div class="card-info">
+
+                        <h3>طلبات الموارد البشرية</h3>
+
+                        <h2>19</h2>
+
+                        <span>بانتظار المراجعة</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- نهاية الجزء الأول -->
+<!-- ================= محتوى الصفحة ================= -->
+
+            <div class="dashboard-content">
+
+                <!-- ================= جدول الموظفين ================= -->
+
+                <div class="table-section">
+
+                    <div class="section-header">
+                        <h2>آخر الموظفين المضافين</h2>
+
+                        <a href="#" class="view-all">
+                            عرض الكل
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </div>
+
+                    <div class="table-scroll"><table>
+
+                        <thead>
+
+                            <tr>
+                                <th>الرقم</th>
+                                <th>الاسم</th>
+                                <th>القسم</th>
+                                <th>المحافظة</th>
+                                <th>الحالة</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>EMP-001</td>
+
+                                <td>محمد أحمد</td>
+
+                                <td>الإدارة المالية</td>
+
+                                <td>دمشق</td>
+
+                                <td>
+                                    <span class="status active">
+                                        نشط
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>EMP-002</td>
+
+                                <td>أحمد علي</td>
+
+                                <td>الموارد البشرية</td>
+
+                                <td>حمص</td>
+
+                                <td>
+                                    <span class="status active">
+                                        نشط
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>EMP-003</td>
+
+                                <td>سارة محمد</td>
+
+                                <td>التقارير</td>
+
+                                <td>اللاذقية</td>
+
+                                <td>
+                                    <span class="status vacation">
+                                        إجازة
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>EMP-004</td>
+
+                                <td>نور خالد</td>
+
+                                <td>الإدارة</td>
+
+                                <td>حلب</td>
+
+                                <td>
+                                    <span class="status active">
+                                        نشط
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table></div>
+
+                </div>
+
+                <!-- ================= الشريط الجانبي ================= -->
+
+                <div class="right-panel">
+
+                    <!-- آخر النشاطات -->
+
+                    <div class="activity-box">
+
+                        <div class="section-header">
+                            <h2>آخر النشاطات</h2>
+                        </div>
+
+                        <div class="activity">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                            <div>
+
+                                <h4>إضافة موظف جديد</h4>
+
+                                <span>منذ 10 دقائق</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="activity">
+
+                            <i class="fa-solid fa-money-bill"></i>
+
+                            <div>
+
+                                <h4>اعتماد دفعة مالية</h4>
+
+                                <span>منذ ساعة</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="activity">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                            <div>
+
+                                <h4>إنشاء تقرير جديد</h4>
+
+                                <span>اليوم</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="activity">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            <div>
+
+                                <h4>تعديل بيانات موظف</h4>
+
+                                <span>اليوم</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- الإجراءات السريعة -->
+
+                    
+
+                    <!-- التنبيهات -->
+
+                    
+
+                </div>
+
+            </div>
+                    <div class="side-by-side-row">
+<div class="quick-actions">
+
+                        <div class="section-header">
+                            <h2>إجراءات سريعة</h2>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-user-plus"></i>
+                            إضافة موظف
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            إنشاء تقرير
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            دفعة مالية
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-users-gear"></i>
+                            إدارة HR
+                        </button>
+
+                    </div>
+<div class="alerts">
+
+                        <div class="section-header">
+                            <h2>التنبيهات</h2>
+                        </div>
+
+                        <div class="alert warning">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            <p>
+                                يوجد 5 طلبات إجازة بانتظار الموافقة.
+                            </p>
+
+                        </div>
+
+                        <div class="alert success">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <p>
+                                تم حفظ جميع البيانات بنجاح.
+                            </p>
+
+                        </div>
+
+                    </div>
+                    </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="../assets/js/layout.js"></script>
+<script src="../assets/js/animations.js"></script>
+<script src="../assets/js/app.js"></script>
+
+</body>
+
+</html>

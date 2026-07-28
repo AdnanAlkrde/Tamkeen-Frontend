@@ -1,0 +1,288 @@
+<!-- ================= finance.html ================= -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الإدارة المالية | صندوق المعونة الاجتماعية</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/finance.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+  <div id="app-sidebar"></div>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main-content">
+
+    <!-- ================= HEADER ================= -->
+    <div id="app-header" data-title="الإدارة المالية" data-subtitle="إدارة أوامر الصرف والتحويلات والشيكات والموازنة"
+      data-search="ابحث داخل الإدارة المالية..."></div>
+
+    <!-- ================= FINANCE ================= -->
+    <section class="dashboard">
+
+      <!-- Welcome -->
+      <div class="welcome-box">
+        <div>
+          <h2>القسم المالي 💰</h2>
+          <p>
+            إدارة جميع العمليات المالية الخاصة بصندوق المعونة
+            <br>
+            أوامر الصرف - التحويلات - الشيكات - الموازنة - الحسابات
+          </p>
+        </div>
+        <div class="date">
+          <i class="fa-regular fa-calendar-days"></i>
+          <span>17 يوليو 2026</span>
+        </div>
+      </div>
+
+      <!-- ================= FINANCE MODULES ================= -->
+      <div class="cards">
+        <a href="payment-orders.html" class="card">
+          <div class="card-icon blue"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <div class="card-info">
+            <h3>إدارة أوامر الصرف</h3>
+            <span>إنشاء - تعديل - اعتماد - طباعة</span>
+          </div>
+        </a>
+        <a href="transfers.html" class="card">
+          <div class="card-icon green"><i class="fa-solid fa-money-bill-transfer"></i></div>
+          <div class="card-info">
+            <h3>أوامر التحويل</h3>
+            <span>إنشاء وربط ومتابعة التحويلات</span>
+          </div>
+        </a>
+        <a href="cheques.html" class="card">
+          <div class="card-icon orange"><i class="fa-solid fa-money-check-dollar"></i></div>
+          <div class="card-info">
+            <h3>إدارة الشيكات</h3>
+            <span>إصدار وربط ومتابعة الشيكات</span>
+          </div>
+        </a>
+        <a href="accounts.html" class="card">
+          <div class="card-icon purple"><i class="fa-solid fa-folder-tree"></i></div>
+          <div class="card-info">
+            <h3>دليل الحسابات</h3>
+            <span>إدارة الحسابات ضمن هيكل هرمي</span>
+          </div>
+        </a>
+        <a href="budget.html" class="card">
+          <div class="card-icon red"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="card-info">
+            <h3>إدارة الموازنة</h3>
+            <span>إضافة وتعديل الاعتمادات المالية</span>
+          </div>
+        </a>
+        <a href="financial-reports.html" class="card">
+          <div class="card-icon dark"><i class="fa-solid fa-chart-column"></i></div>
+          <div class="card-info">
+            <h3>التقارير المالية</h3>
+            <span>جميع التقارير والإحصائيات المالية</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ================= DASHBOARD CONTENT ================= -->
+      <div class="dashboard-content">
+
+        <!-- ================= آخر العمليات (70%) ================= -->
+        <div class="table-section">
+          <div class="section-header">
+            <h2>آخر العمليات المالية</h2>
+            <a href="#" class="view-all">عرض الكل <i class="fa-solid fa-arrow-left"></i></a>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>رقم العملية</th>
+                  <th>النوع</th>
+                  <th>الجهة المستفيدة</th>
+                  <th>المبلغ</th>
+                  <th>التاريخ</th>
+                  <th>الحالة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FIN-00125</td>
+                  <td>أمر صرف</td>
+                  <td>جمعية الأمل</td>
+                  <td>12,500,000 ل.س</td>
+                  <td>17/07/2026</td>
+                  <td><span class="status active">معتمد</span></td>
+                </tr>
+                <tr>
+                  <td>FIN-00126</td>
+                  <td>تحويل مالي</td>
+                  <td>مصرف سورية المركزي</td>
+                  <td>35,000,000 ل.س</td>
+                  <td>17/07/2026</td>
+                  <td><span class="status vacation">قيد التنفيذ</span></td>
+                </tr>
+                <tr>
+                  <td>FIN-00127</td>
+                  <td>إصدار شيك</td>
+                  <td>الهلال الأحمر</td>
+                  <td>8,400,000 ل.س</td>
+                  <td>16/07/2026</td>
+                  <td><span class="status active">تم الإصدار</span></td>
+                </tr>
+                <tr>
+                  <td>FIN-00128</td>
+                  <td>أمر صرف</td>
+                  <td>مديرية الشؤون الاجتماعية</td>
+                  <td>21,300,000 ل.س</td>
+                  <td>16/07/2026</td>
+                  <td><span class="status active">مكتمل</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ================= العمود الأيمن (30%) ================= -->
+        <div class="right-panel">
+
+          <!-- 1. آخر النشاطات المالية -->
+          <div class="activity-box">
+            <div class="section-header">
+              <h2>آخر النشاطات المالية</h2>
+            </div>
+            <div class="activity">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+              <div>
+                <h4>تم إنشاء أمر صرف جديد</h4>
+                <span>منذ 5 دقائق</span>
+              </div>
+            </div>
+            <div class="activity">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+              <div>
+                <h4>تم تنفيذ أمر تحويل</h4>
+                <span>منذ 25 دقيقة</span>
+              </div>
+            </div>
+            <div class="activity">
+              <i class="fa-solid fa-money-check-dollar"></i>
+              <div>
+                <h4>إصدار شيك جديد</h4>
+                <span>اليوم</span>
+              </div>
+            </div>
+            <div class="activity">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <div>
+                <h4>تعديل اعتماد مالي</h4>
+                <span>اليوم</span>
+              </div>
+            </div>
+          </div>
+          </div>
+<!-- 2. إحصائيات سريعة -->
+<div class="statistics-box">
+  <div class="section-header">
+    <h2>إحصائيات سريعة</h2>
+  </div>
+  <div class="stat-item">
+    <i class="fa-solid fa-wallet"></i>
+    <div>
+      <h4>إجمالي أوامر الصرف</h4>
+      <span>1,258 عملية</span>
+    </div>
+  </div>
+  <div class="stat-item">
+    <i class="fa-solid fa-building-columns"></i>
+    <div>
+      <h4>التحويلات البنكية</h4>
+      <span>842 عملية</span>
+    </div>
+  </div>
+  <div class="stat-item">
+    <i class="fa-solid fa-file-invoice"></i>
+    <div>
+      <h4>الشيكات الصادرة</h4>
+      <span>413 شيك</span>
+    </div>
+  </div>
+  <div class="stat-item">
+    <i class="fa-solid fa-chart-pie"></i>
+    <div>
+      <h4>الاعتمادات المالية</h4>
+      <span>75 اعتماد</span>
+    </div>
+  </div>
+</div>
+
+<!-- 3. إجراءات سريعة -->
+<div class="quick-actions">
+  <div class="section-header">
+    <h2>إجراءات سريعة</h2>
+  </div>
+  <button onclick="location.href='payment-orders.html'">
+    <i class="fa-solid fa-plus"></i> إنشاء أمر صرف
+  </button>
+  <button onclick="location.href='transfers.html'">
+    <i class="fa-solid fa-money-bill-transfer"></i> إنشاء أمر تحويل
+  </button>
+  <button onclick="location.href='cheques.html'">
+    <i class="fa-solid fa-money-check-dollar"></i> إصدار شيك
+  </button>
+  <button onclick="location.href='budget.html'">
+    <i class="fa-solid fa-scale-balanced"></i> إضافة اعتماد
+  </button>
+</div>
+
+<!-- 4. التنبيهات -->
+<div class="alerts">
+  <div class="section-header">
+    <h2>التنبيهات</h2>
+  </div>
+  <div class="alert warning">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <p>يوجد 8 أوامر صرف بانتظار الاعتماد.</p>
+  </div>
+  <div class="alert warning">
+    <i class="fa-solid fa-clock"></i>
+    <p>يوجد 3 شيكات لم يتم صرفها بعد.</p>
+  </div>
+  <div class="alert success">
+    <i class="fa-solid fa-circle-check"></i>
+    <p>تمت مزامنة البيانات المالية بنجاح.</p>
+  </div>
+
+        </div>
+
+        
+        <!-- ================= نهاية RIGHT PANEL ================= -->
+
+      </div>
+      <!-- ================= نهاية DASHBOARD CONTENT ================= -->
+
+    </section>
+
+  </main>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script src="../assets/js/layout.js"></script>
+  <script src="../assets/js/finance.js"></script>
+
+</body>
+
+</html>

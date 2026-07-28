@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>
+    التقارير المالية | صندوق المعونة الاجتماعية
+  </title>
+
+
+
+  <!-- Google Font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="../assets/css/financial-reports.css">
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+  <!-- ================= SIDEBAR ================= -->
+
+
+  <div id="app-sidebar"></div>
+
+
+
+
+
+
+
+
+
+  <!-- ================= MAIN ================= -->
+
+
+  <main class="main-content">
+
+
+
+
+
+
+
+    <!-- ================= HEADER ================= -->
+
+
+    <div id="app-header" data-title="التقارير المالية" data-subtitle="عرض وتحليل كافة البيانات المالية للصندوق"
+      data-search="البحث في التقارير..."></div>
+
+    <!-- ================= REPORTS SECTION ================= -->
+
+
+    <section class="dashboard">
+
+
+
+
+
+
+
+
+      <!-- ================= WELCOME ================= -->
+
+
+      <div class="welcome-box">
+
+
+
+        <div>
+
+
+          <h2>
+            <i class="fa-solid fa-chart-column"></i> مركز التقارير المالية
+          </h2>
+
+
+
+          <p>
+
+            عرض وتحليل العمليات المالية الخاصة بصندوق المعونة الاجتماعية
+
+            <br>
+
+            الصرف - التحويلات - الشيكات - الموازنة - الحسابات
+
+          </p>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="report-actions">
+
+
+          <button class="excel-btn">
+
+
+            <i class="fa-solid fa-file-excel"></i>
+
+
+            تصدير Excel
+
+
+          </button>
+
+
+
+
+
+          <button class="pdf-btn">
+
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+
+            تصدير PDF
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- ================= REPORT CARDS ================= -->
+
+
+      <div class="cards">
+
+
+
+
+
+
+
+
+
+        <a href="#" class="card">
+
+
+          <div class="card-icon blue">
+
+
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+
+          </div>
+
+
+
+          <div class="card-info">
+
+
+            <h3>
+              تقارير أوامر الصرف
+            </h3>
+
+
+            <span>
+              عرض وتحليل جميع أوامر الصرف
+            </span>
+
+
+          </div>
+
+
+
+        </a>
+
+
+
+
+
+
+
+
+
+        <a href="#" class="card">
+
+
+          <div class="card-icon green">
+
+
+            <i class="fa-solid fa-money-bill-transfer"></i>
+
+
+          </div>
+
+
+
+          <div class="card-info">
+
+
+            <h3>
+              تقارير التحويلات
+            </h3>
+
+
+            <span>
+              متابعة التحويلات المالية
+            </span>
+
+
+          </div>
+
+
+
+        </a>
+
+
+
+
+
+
+
+
+
+        <a href="#" class="card">
+
+
+          <div class="card-icon orange">
+
+
+            <i class="fa-solid fa-money-check-dollar"></i>
+
+
+          </div>
+
+
+
+          <div class="card-info">
+
+
+            <h3>
+              تقارير الشيكات
+            </h3>
+
+
+            <span>
+              إحصائيات الشيكات الصادرة
+            </span>
+
+
+          </div>
+
+
+
+        </a>
+
+
+
+
+
+
+
+
+
+        <a href="#" class="card">
+
+
+          <div class="card-icon purple">
+
+
+            <i class="fa-solid fa-scale-balanced"></i>
+
+
+          </div>
+
+
+
+          <div class="card-info">
+
+
+            <h3>
+              تقارير الموازنة
+            </h3>
+
+
+            <span>
+              تحليل الاعتمادات والمصروفات
+            </span>
+
+
+          </div>
+
+
+
+        </a>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- ================= FILTERS ================= -->
+
+
+      <div class="filter-box">
+
+
+
+        <div class="filter-item">
+
+
+          <label>
+            من تاريخ
+          </label>
+
+
+          <input type="date">
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="filter-item">
+
+
+          <label>
+            إلى تاريخ
+          </label>
+
+
+          <input type="date">
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="filter-item">
+
+
+          <label>
+            نوع التقرير
+          </label>
+
+
+          <select>
+
+
+            <option>
+              كل التقارير
+            </option>
+
+
+            <option>
+              أوامر الصرف
+            </option>
+
+
+            <option>
+              التحويلات
+            </option>
+
+
+            <option>
+              الشيكات
+            </option>
+
+
+            <option>
+              الموازنة
+            </option>
+
+
+          </select>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <button class="search-report">
+
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+
+          عرض التقرير
+
+
+        </button>
+
+
+
+      </div>
+
+      <!-- ================= REPORT RESULT ================= -->
+
+
+      <div class="dashboard-content">
+
+
+
+
+
+
+
+
+        <!-- ================= REPORT TABLE ================= -->
+
+
+        <div class="table-section">
+
+
+
+          <div class="section-header">
+
+
+            <h2>
+              نتائج التقرير المالي
+            </h2>
+
+
+
+            <a href="#" class="view-all">
+
+
+              عرض كامل
+
+
+              <i class="fa-solid fa-arrow-left"></i>
+
+
+            </a>
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="table-scroll">
+            <table>
+
+
+              <thead>
+
+
+                <tr>
+
+
+                  <th>
+                    رقم العملية
+                  </th>
+
+
+
+                  <th>
+                    نوع العملية
+                  </th>
+
+
+
+                  <th>
+                    الجهة
+                  </th>
+
+
+
+                  <th>
+                    المبلغ
+                  </th>
+
+
+
+                  <th>
+                    التاريخ
+                  </th>
+
+
+
+                  <th>
+                    الحالة
+                  </th>
+
+
+
+                </tr>
+
+
+              </thead>
+
+
+
+
+
+
+
+
+
+              <tbody>
+
+
+
+
+
+                <tr>
+
+
+                  <td>
+                    FIN-202601
+                  </td>
+
+
+
+                  <td>
+                    أمر صرف
+                  </td>
+
+
+
+                  <td>
+                    جمعية الأمل
+                  </td>
+
+
+
+                  <td>
+                    12,500,000 ل.س
+                  </td>
+
+
+
+                  <td>
+                    17/07/2026
+                  </td>
+
+
+
+                  <td>
+
+                    <span class="status active">
+
+                      مكتمل
+
+                    </span>
+
+                  </td>
+
+
+                </tr>
+
+
+
+
+
+
+
+
+
+                <tr>
+
+
+                  <td>
+                    FIN-202602
+                  </td>
+
+
+
+                  <td>
+                    تحويل مالي
+                  </td>
+
+
+
+                  <td>
+                    مصرف سورية المركزي
+                  </td>
+
+
+
+                  <td>
+                    35,000,000 ل.س
+                  </td>
+
+
+
+                  <td>
+                    16/07/2026
+                  </td>
+
+
+
+                  <td>
+
+                    <span class="status vacation">
+
+                      قيد التنفيذ
+
+                    </span>
+
+                  </td>
+
+
+                </tr>
+
+
+
+
+
+
+
+
+
+                <tr>
+
+
+                  <td>
+                    FIN-202603
+                  </td>
+
+
+
+                  <td>
+                    شيك مالي
+                  </td>
+
+
+
+                  <td>
+                    الهلال الأحمر
+                  </td>
+
+
+
+                  <td>
+                    8,400,000 ل.س
+                  </td>
+
+
+
+                  <td>
+                    15/07/2026
+                  </td>
+
+
+
+                  <td>
+
+                    <span class="status active">
+
+                      تم الصرف
+
+                    </span>
+
+                  </td>
+
+
+                </tr>
+
+
+
+
+
+
+
+
+
+                <tr>
+
+
+                  <td>
+                    FIN-202604
+                  </td>
+
+
+
+                  <td>
+                    اعتماد مالي
+                  </td>
+
+
+
+                  <td>
+                    صندوق المعونة
+                  </td>
+
+
+
+                  <td>
+                    20,000,000 ل.س
+                  </td>
+
+
+
+                  <td>
+                    14/07/2026
+                  </td>
+
+
+
+                  <td>
+
+                    <span class="status active">
+
+                      معتمد
+
+                    </span>
+
+                  </td>
+
+
+                </tr>
+
+
+
+
+
+              </tbody>
+
+              <tr>
+
+
+              </tr>
+              
+              
+                <td>
+                  FIN-202564
+                </td>
+              
+              
+              
+                <td>
+                  اعتماد علاجي
+                </td>
+              
+              
+              
+                <td>
+                  مشفى المعونة
+                </td>
+              
+              
+              
+                <td>
+                  20,0000,000 ل.س
+                </td>
+              
+              
+              
+                <td>
+                  4/02/2026
+                </td>
+              
+              
+              
+                <td>
+              
+                  <span class="status active">
+              
+                    معتمد
+              
+                  </span>
+              
+                </td>
+              
+              
+              </tr>
+              
+              
+              
+              
+              
+              </tbody>
+
+
+            </table>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- ================= STATISTICS ================= -->
+
+
+        <div class="right-panel">
+
+
+
+
+
+
+
+          <div class="activity-box">
+
+
+
+            <div class="section-header">
+
+
+              <h2>
+                الإحصائيات المالية
+              </h2>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-money-bill-wave"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  إجمالي المصروفات
+                </h4>
+
+
+                <span>
+                  32 مليار ل.س
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  عدد التحويلات
+                </h4>
+
+
+                <span>
+                  842 عملية
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-file-invoice"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  عدد أوامر الصرف
+                </h4>
+
+
+                <span>
+                  1258 أمر
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-chart-line"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  نسبة تنفيذ الموازنة
+                </h4>
+
+
+                <span>
+                  64%
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <!-- ================= LATEST REPORTS + ALERTS ROW ================= -->
+
+
+
+        </div>
+        <div class="side-by-side-row">
+
+
+          <div class="activity-box">
+
+
+
+            <div class="section-header">
+
+
+              <h2>
+                آخر التقارير المنشأة
+              </h2>
+
+
+
+              <a href="#" class="view-all">
+
+                عرض الكل
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+              </a>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-file-pdf"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  تقرير المصروفات الشهرية
+                </h4>
+
+
+                <span>
+                  تم الإنشاء اليوم 10:30 صباحاً
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-file-excel"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  تقرير التحويلات البنكية
+                </h4>
+
+
+                <span>
+                  تم الإنشاء أمس
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="activity">
+
+
+              <i class="fa-solid fa-chart-column"></i>
+
+
+
+              <div>
+
+
+                <h4>
+                  تقرير تنفيذ الموازنة
+                </h4>
+
+
+                <span>
+                  تم الإنشاء قبل يومين
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <!-- ================= ALERTS ================= -->
+
+
+          <div class="activity-box">
+
+
+
+            <div class="section-header">
+
+
+              <h2>
+                التنبيهات المالية
+              </h2>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="alert warning">
+
+
+              <i class="fa-solid fa-triangle-exclamation"></i>
+
+
+
+              <p>
+
+                يوجد تقارير شهرية بانتظار الاعتماد.
+
+              </p>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="alert warning">
+
+
+              <i class="fa-solid fa-clock"></i>
+
+
+
+              <p>
+
+                لم يتم تصدير تقرير الموازنة الحالي.
+
+              </p>
+
+
+
+            </div>
+            <div class="alert success">
+
+
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                تم تحديث جميع البيانات المالية بنجاح
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+
+  <script src="../assets/js/layout.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/financial-reports.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

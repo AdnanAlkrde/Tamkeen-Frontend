@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        التحويلات المالية | الإدارة المالية
+    </title>
+
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/css/animations.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../assets/css/transfers.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<div id="app-sidebar"></div>
+
+
+
+
+
+
+
+<!-- ================= MAIN ================= -->
+
+
+<main class="main-content">
+
+
+
+<div id="app-header" data-title="التحويلات المالية" data-subtitle="إدارة التحويلات البنكية ومتابعة حركة الأموال" data-search="البحث عن تحويل..."></div>
+
+<!-- ================= TRANSFERS SECTION ================= -->
+
+
+<section class="dashboard">
+
+
+
+
+
+<!-- ================= WELCOME ================= -->
+
+
+<div class="welcome-box">
+
+
+    <div>
+
+
+        <h2>
+            <i class="fa-solid fa-money-bill-transfer"></i> إدارة التحويلات البنكية
+        </h2>
+
+
+        <p>
+
+            متابعة جميع التحويلات المالية الخاصة بصندوق المعونة الاجتماعية
+            <br>
+            إنشاء - اعتماد - تنفيذ - تتبع حركة الأموال
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+    <button class="add-btn" onclick="openModal()" type="button">
+
+
+    <i class="fa-solid fa-plus"></i>
+
+
+    إنشاء تحويل جديد
+
+
+    </button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+
+<div class="stats-cards">
+
+
+
+    <div class="stat-card">
+
+
+        <div class="stat-icon blue">
+
+
+            <i class="fa-solid fa-money-bill-transfer"></i>
+
+
+        </div>
+
+
+        <div>
+
+
+            <h3>
+                إجمالي التحويلات
+            </h3>
+
+
+            <strong>
+                842
+            </strong>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="stat-card">
+
+
+        <div class="stat-icon green">
+
+
+            <i class="fa-solid fa-circle-check"></i>
+
+
+        </div>
+
+
+        <div>
+
+
+            <h3>
+                تحويلات منفذة
+            </h3>
+
+
+            <strong>
+                710
+            </strong>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="stat-card">
+
+
+        <div class="stat-icon orange">
+
+
+            <i class="fa-solid fa-clock"></i>
+
+
+        </div>
+
+
+        <div>
+
+
+            <h3>
+                قيد التنفيذ
+            </h3>
+
+
+            <strong>
+                98
+            </strong>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="stat-card">
+
+
+        <div class="stat-icon red">
+
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+
+        </div>
+
+
+        <div>
+
+
+            <h3>
+                تحويلات فاشلة
+            </h3>
+
+
+            <strong>
+                34
+            </strong>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= TRANSFERS TABLE ================= -->
+
+
+<div class="table-section">
+
+
+
+<div class="section-header">
+
+
+    <h2>
+        قائمة التحويلات البنكية
+    </h2>
+
+
+
+
+    <button class="filter-btn">
+
+
+        <i class="fa-solid fa-filter"></i>
+
+
+        فلترة
+
+
+    </button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="table-scroll"><table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+    رقم التحويل
+</th>
+
+
+<th>
+    البنك
+</th>
+
+
+<th>
+    الحساب المرسل
+</th>
+
+
+<th>
+    الحساب المستلم
+</th>
+
+
+<th>
+    المبلغ
+</th>
+
+
+<th>
+    التاريخ
+</th>
+
+
+<th>
+    الحالة
+</th>
+
+
+<th>
+    الإجراءات
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+
+
+
+<tbody>
+
+
+
+<tr>
+
+
+<td>
+    TR-00842
+</td>
+
+
+
+<td>
+    المصرف التجاري السوري
+</td>
+
+
+
+<td>
+    حساب الصندوق الرئيسي
+</td>
+
+
+
+<td>
+    جمعية الأمل
+</td>
+
+
+
+<td>
+    35,000,000 ل.س
+</td>
+
+
+
+<td>
+    17/07/2026
+</td>
+
+
+
+<td>
+
+<span class="status active">
+
+    مكتمل
+
+</span>
+
+</td>
+
+
+
+<td>
+
+
+<button class="view">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+
+
+<button class="print">
+
+<i class="fa-solid fa-print"></i>
+
+</button>
+
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+    TR-00843
+</td>
+
+
+
+<td>
+    مصرف سورية المركزي
+</td>
+
+
+
+<td>
+    حساب المعونة
+</td>
+
+
+
+<td>
+    مديرية حمص
+</td>
+
+
+
+<td>
+    18,500,000 ل.س
+</td>
+
+
+
+<td>
+    16/07/2026
+</td>
+
+
+
+<td>
+
+
+<span class="status vacation">
+
+    قيد التنفيذ
+
+</span>
+
+
+</td>
+
+
+
+<td>
+
+
+<button class="view">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+
+
+<button class="print">
+
+<i class="fa-solid fa-print"></i>
+
+</button>
+
+
+
+</td>
+
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+    TR-00844
+</td>
+
+
+
+<td>
+    بنك سورية الدولي
+</td>
+
+
+
+<td>
+    الحساب الإداري
+</td>
+
+
+
+<td>
+    مؤسسة خيرية
+</td>
+
+
+
+<td>
+    7,200,000 ل.س
+</td>
+
+
+
+<td>
+    15/07/2026
+</td>
+
+
+
+<td>
+
+
+<span class="status danger">
+
+    فشل
+
+</span>
+
+
+</td>
+
+
+
+<td>
+
+
+<button class="view">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+
+
+<button class="print">
+
+<i class="fa-solid fa-print"></i>
+
+</button>
+
+
+
+</td>
+
+
+
+</tr>
+
+
+
+
+
+</tbody>
+
+
+
+</table></div>
+
+
+
+</div>
+
+<!-- ================= LOWER CONTENT ================= -->
+
+
+<div class="dashboard-content">
+
+
+
+
+
+<!-- ================= RECENT TRANSFERS ================= -->
+
+
+<div class="activity-box">
+
+
+    <div class="section-header">
+
+
+        <h2>
+            آخر التحويلات
+        </h2>
+
+
+        <a href="#" class="view-all">
+
+            عرض الكل
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="activity">
+
+
+        <i class="fa-solid fa-money-bill-transfer"></i>
+
+
+        <div>
+
+
+            <h4>
+                تنفيذ تحويل TR-00842
+            </h4>
+
+
+            <span>
+                منذ 15 دقيقة
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="activity">
+
+
+        <i class="fa-solid fa-building-columns"></i>
+
+
+        <div>
+
+
+            <h4>
+                إرسال حوالة إلى مديرية حمص
+            </h4>
+
+
+            <span>
+                منذ ساعة
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="activity">
+
+
+        <i class="fa-solid fa-circle-check"></i>
+
+
+        <div>
+
+
+            <h4>
+                اعتماد تحويل مالي جديد
+            </h4>
+
+
+            <span>
+                اليوم
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= RIGHT PANEL ================= -->
+
+
+<div class="right-panel">
+
+
+
+
+
+<!-- QUICK ACTIONS -->
+
+
+<div class="quick-actions">
+
+
+<div class="section-header">
+
+
+<h2>
+    إجراءات سريعة
+</h2>
+
+
+</div>
+
+
+
+
+
+<button onclick="openModal()">
+
+
+
+<i class="fa-solid fa-plus"></i>
+
+
+
+إنشاء تحويل جديد
+
+
+
+</button>
+
+
+
+
+
+
+
+<button>
+
+
+
+<i class="fa-solid fa-file-export"></i>
+
+
+
+تصدير التحويلات
+
+
+
+</button>
+
+
+
+
+
+
+
+<button>
+
+
+
+<i class="fa-solid fa-chart-line"></i>
+
+
+
+تقرير التحويلات
+
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- TRANSFER INFO -->
+
+
+<div class="activity-box">
+
+
+
+<div class="section-header">
+
+
+<h2>
+    ملخص التحويلات
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-wallet"></i>
+
+
+<div>
+
+
+<h4>
+    إجمالي قيمة التحويلات
+</h4>
+
+
+<span>
+    12,850,000,000 ل.س
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-arrow-trend-up"></i>
+
+
+<div>
+
+
+<h4>
+    تحويلات هذا الشهر
+</h4>
+
+
+<span>
+    620 عملية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+
+<div>
+
+
+<h4>
+    التحويلات المعلقة
+</h4>
+
+
+<span>
+    98 تحويل
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= CREATE TRANSFER MODAL ================= -->
+
+
+
+<div class="modal" id="transferModal">
+
+
+
+
+
+<div class="modal-content">
+
+
+
+
+
+<div class="modal-header">
+
+
+
+<h2>
+    إنشاء تحويل جديد
+</h2>
+
+
+
+
+<button onclick="closeModal()">
+
+
+<i class="fa-solid fa-xmark"></i>
+
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<form>
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+    البنك المرسل
+</label>
+
+
+<input type="text"
+placeholder="اسم البنك">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+    الحساب المستلم
+</label>
+
+
+<input type="text"
+placeholder="رقم أو اسم الحساب">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+    المبلغ
+</label>
+
+
+<input type="number"
+placeholder="قيمة التحويل">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+    ملاحظات
+</label>
+
+
+<textarea
+placeholder="تفاصيل إضافية"></textarea>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<button type="button"  class="save-btn">
+
+
+<i class="fa-solid fa-check"></i>
+
+
+حفظ التحويل
+
+
+
+</button>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+<!-- ================= END TRANSFER MODAL ================= -->
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/animations.js"></script>
+<script src="../assets/js/transfers.js"></script>
+
+
+
+
+</body>
+
+</html>

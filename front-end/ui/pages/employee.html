@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة الموظفين | صندوق المعونة الاجتماعية</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/employee.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+  <div id="app-sidebar"></div>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main-content"> <!-- ✅ تغيير من main إلى main-content -->
+
+    <!-- ================= HEADER ================= -->
+    <div id="app-header" data-title="إدارة الموظفين"
+      data-subtitle="إدارة بيانات الموظفين وعملياتهم داخل صندوق المعونة الاجتماعية"
+      data-search="ابحث عن موظف أو تقرير..." data-menu-onclick="toggleSidebar()"></div>
+
+    <!-- ================= STATISTICS ================= -->
+    <section class="stats-row">
+      <div class="stat-card">
+        <div class="stat-info">
+          <span class="label">إجمالي الموظفين</span>
+          <strong id="statTotal">243</strong>
+          <small>+12 هذا الشهر</small>
+        </div>
+        <div class="stat-icon blue">
+          <i class="fa-solid fa-users"></i>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-info">
+          <span class="label">موظفون نشطون</span>
+          <strong id="statActive">228</strong>
+          <small>تم تحديثها اليوم</small>
+        </div>
+        <div class="stat-icon green">
+          <i class="fa-solid fa-user-check"></i>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-info">
+          <span class="label">قيد المراجعة</span>
+          <strong id="statPending">7</strong>
+          <small>بانتظار المراجعة</small>
+        </div>
+        <div class="stat-icon orange">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-info">
+          <span class="label">محذوفون منطقياً</span>
+          <strong id="statDeleted">8</strong>
+          <small>قابلة للاستعادة</small>
+        </div>
+        <div class="stat-icon red">
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EMPLOYEE PANEL ================= -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>عمليات الموظفين</h2>
+          <p>إدارة وإضافة وتعديل بيانات الموظفين</p>
+        </div>
+        <div class="actions-row">
+          <button class="btn btn-green" onclick="openAddModal()">
+            <i class="fa-solid fa-user-plus"></i> إضافة موظف
+          </button>
+          <button class="btn btn-outline" onclick="toggleAdvSearch()">
+            <i class="fa-solid fa-filter"></i> البحث المتقدم
+          </button>
+          <button class="btn btn-blue" onclick="exportData('excel')">
+            <i class="fa-solid fa-file-excel"></i> Excel
+          </button>
+          <button class="btn btn-orange" onclick="exportData('pdf')">
+            <i class="fa-solid fa-file-pdf"></i> PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= ADVANCED SEARCH ================= -->
+      <div class="adv-search" id="advSearch" style="display:none;">
+        <div class="field">
+          <label>الرقم الذاتي</label>
+          <input type="text" id="fRegNo" placeholder="مثال: 100234">
+        </div>
+        <div class="field">
+          <label>الرقم الوطني</label>
+          <input type="text" id="fNationalNo" placeholder="مثال: 09876543">
+        </div>
+        <div class="field">
+          <label>الاسم</label>
+          <input type="text" id="fName" placeholder="اسم الموظف">
+        </div>
+        <div class="field">
+          <label>القسم</label>
+          <select id="fDept">
+            <option value="">الكل</option>
+            <option>الإدارة المالية</option>
+            <option>الموارد البشرية</option>
+            <option>خدمة المستفيدين</option>
+            <option>تقنية المعلومات</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>المحافظة</label>
+          <select id="fGov">
+            <option value="">الكل</option>
+            <option>دمشق</option>
+            <option>حلب</option>
+            <option>حمص</option>
+            <option>اللاذقية</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>الجنس</label>
+          <select id="fGender">
+            <option value="">الكل</option>
+            <option>ذكر</option>
+            <option>أنثى</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>الحالة</label>
+          <select id="fStatus">
+            <option value="">الكل</option>
+            <option value="active">نشط</option>
+            <option value="pending">قيد المراجعة</option>
+            <option value="deleted">محذوف منطقياً</option>
+          </select>
+        </div>
+        <div class="field search-action">
+          <button class="btn btn-green" onclick="applyFilters()">
+            <i class="fa-solid fa-magnifying-glass"></i> تطبيق الفلاتر
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= EMPLOYEE GRID ================= -->
+      <div class="employee-grid">
+        <div class="employee-row employee-header">
+          <div><input type="checkbox" id="selectAll"></div>
+          <div>الرقم <i class="fa-solid fa-sort"></i></div>
+          <div>الاسم <i class="fa-solid fa-sort"></i></div>
+          <div>الرقم الذاتي <i class="fa-solid fa-sort"></i></div>
+          <div>الرقم الوطني <i class="fa-solid fa-sort"></i></div>
+          <div>القسم</div>
+          <div>المحافظة</div>
+          <div>الجوال</div>
+          <div>الحالة</div>
+          <div>الإجراءات</div>
+        </div>
+        <div id="employeeGridBody">
+          <!-- البيانات تأتي من JavaScript -->
+        </div>
+      </div>
+
+      <!-- ================= BULK ACTIONS ================= -->
+      <div class="bulk-actions">
+        <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> حذف المحدد</button>
+        <button class="btn btn-blue"><i class="fa-solid fa-print"></i> طباعة البطاقات</button>
+        <button class="btn btn-green"><i class="fa-solid fa-file-export"></i> تصدير المحدد</button>
+      </div>
+
+      <!-- ================= PAGINATION ================= -->
+      <div class="pagination">
+        <div class="count" id="resultCount">عرض 10 من 243 موظف</div>
+        <div class="page-btns" id="pageBtns">
+          <button onclick="goToPage(currentPage - 1)">السابق</button>
+          <button class="active">1</button>
+          <button onclick="goToPage(2)">2</button>
+          <button onclick="goToPage(3)">3</button>
+          <button onclick="goToPage(currentPage + 1)">التالي</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ADD / EDIT MODAL ================= -->
+    <div class="modal-overlay" id="empModal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modalTitle">إضافة موظف جديد</h3>
+          <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <form id="empForm">
+            <div class="form-grid">
+              <div class="field">
+                <label>الرقم الذاتي</label>
+                <input type="text" id="in_regNo" required>
+              </div>
+              <div class="field">
+                <label>الرقم الوطني</label>
+                <input type="text" id="in_nationalNo" required>
+              </div>
+              <div class="field">
+                <label>الاسم</label>
+                <input type="text" id="in_name" required>
+              </div>
+              <div class="field">
+                <label>اسم الأب</label>
+                <input type="text" id="in_fatherName">
+              </div>
+              <div class="field">
+                <label>اسم الأم</label>
+                <input type="text" id="in_motherName">
+              </div>
+              <div class="field">
+                <label>تاريخ الولادة</label>
+                <input type="date" id="in_birthDate">
+              </div>
+              <div class="field">
+                <label>الجنس</label>
+                <select id="in_gender">
+                  <option>ذكر</option>
+                  <option>أنثى</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>مكان الولادة</label>
+                <input type="text" id="in_birthPlace">
+              </div>
+              <div class="field">
+                <label>السكن</label>
+                <input type="text" id="in_address">
+              </div>
+              <div class="field">
+                <label>الجوال</label>
+                <input type="text" id="in_phone">
+              </div>
+              <div class="field">
+                <label>الإعاقة</label>
+                <select id="in_disability">
+                  <option>لا يوجد</option>
+                  <option>حركية</option>
+                  <option>بصرية</option>
+                  <option>سمعية</option>
+                  <option>أخرى</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>القسم</label>
+                <select id="in_dept">
+                  <option>الإدارة المالية</option>
+                  <option>الموارد البشرية</option>
+                  <option>خدمة المستفيدين</option>
+                  <option>تقنية المعلومات</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label>المحافظة</label>
+                <select id="in_gov">
+                  <option>دمشق</option>
+                  <option>حلب</option>
+                  <option>حمص</option>
+                  <option>اللاذقية</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-green" onclick="saveEmployee()"><i class="fa-solid fa-floppy-disk"></i> حفظ
+            البيانات</button>
+          <button class="btn btn-outline" onclick="closeModal()">إلغاء</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= PRINT MODAL ================= -->
+    <div class="modal-overlay" id="printModal">
+      <div class="modal print-card-modal">
+        <div class="modal-header">
+          <h3>بطاقة الموظف</h3>
+          <button class="modal-close" onclick="closePrintModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body" id="printCardBody"></div>
+        <div class="modal-footer">
+          <button class="btn btn-green" onclick="window.print()"><i class="fa-solid fa-print"></i> طباعة</button>
+          <button class="btn btn-outline" onclick="closePrintModal()">إغلاق</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast"></div>
+
+  </main>
+
+  <script src="../assets/js/layout.js"></script>
+<script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/employee.js"></script>
+
+</body>
+
+</html>

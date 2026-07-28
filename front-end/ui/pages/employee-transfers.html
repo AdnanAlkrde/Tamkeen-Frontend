@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+إدارة النقل | صندوق المعونة الاجتماعية
+</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/css/animations.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="../assets/css/employee-transfers.css">
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<div id="app-sidebar"></div>
+
+
+
+
+
+
+
+
+
+<!-- ================= MAIN ================= -->
+
+
+<main class="main-content">
+
+
+
+
+
+<!-- ================= HEADER ================= -->
+
+
+<div id="app-header" data-title="إدارة النقل" data-subtitle="إدارة عمليات نقل الموظفين وتتبع سجل النقل" data-search="ابحث عن موظف..."></div>
+
+
+
+
+
+
+<section class="dashboard">
+
+    
+<!-- ================= WELCOME BOX ================= -->
+
+
+<div class="welcome-box">
+
+
+
+<div>
+
+
+<h2>
+<i class="fa-solid fa-truck"></i> إدارة النقل
+</h2>
+
+
+
+<p>
+
+متابعة حركة نقل الموظفين داخل وخارج المؤسسة
+<br>
+نقل داخلي - نقل خارجي - سجل تاريخ النقل
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="date">
+
+
+<i class="fa-regular fa-calendar-days"></i>
+
+
+<span>
+20 يوليو 2026
+</span>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= STATISTICS CARDS ================= -->
+
+
+<div class="cards">
+
+
+
+
+
+
+
+
+<!-- إجمالي النقل -->
+
+
+<div class="card">
+
+
+<div class="card-icon blue">
+
+
+<i class="fa-solid fa-truck-moving"></i>
+
+
+</div>
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+إجمالي عمليات النقل
+</h3>
+
+
+
+<span>
+540 عملية
+</span>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- النقل الداخلي -->
+
+
+<div class="card">
+
+
+<div class="card-icon green">
+
+
+<i class="fa-solid fa-building"></i>
+
+
+</div>
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+النقل الداخلي
+</h3>
+
+
+
+<span>
+420 عملية
+</span>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- النقل الخارجي -->
+
+
+<div class="card">
+
+
+<div class="card-icon orange">
+
+
+<i class="fa-solid fa-earth-arrows-turn-right"></i>
+
+
+</div>
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+النقل الخارجي
+</h3>
+
+
+
+<span>
+120 عملية
+</span>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- الطلبات المعلقة -->
+
+
+<div class="card">
+
+
+<div class="card-icon purple">
+
+
+<i class="fa-solid fa-clock"></i>
+
+
+</div>
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+طلبات معلقة
+</h3>
+
+
+
+<span>
+18 طلب
+</span>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- ================= DASHBOARD CONTENT ================= -->
+
+
+<div class="dashboard-content">
+
+
+
+
+
+
+
+<!-- ================= TRANSFER LIST ================= -->
+
+
+<div class="table-section">
+
+
+
+
+
+
+<div class="section-header">
+
+
+
+<h2>
+سجل عمليات النقل
+</h2>
+
+
+
+
+
+
+<button class="add-btn" onclick="openTransferModal()">
+
+
+
+<i class="fa-solid fa-plus"></i>
+
+
+إضافة نقل جديد
+
+
+
+</button>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="transfer-list">
+
+
+
+
+
+
+
+<!-- TRANSFER CARD 1 -->
+
+
+<div class="transfer-card">
+
+
+
+
+
+<div class="transfer-icon">
+
+
+<i class="fa-solid fa-truck-moving"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="transfer-info">
+
+
+
+<h3>
+أحمد خالد المصري
+</h3>
+
+
+
+
+<p>
+
+الرقم الذاتي:
+100234
+
+</p>
+
+
+
+
+
+<p>
+
+نوع النقل:
+نقل داخلي
+
+</p>
+
+
+
+
+
+<p>
+
+من:
+مديرية دمشق
+
+</p>
+
+
+
+
+
+<p>
+
+إلى:
+مديرية ريف دمشق
+
+</p>
+
+
+
+
+
+<p>
+
+تاريخ النقل:
+15/07/2026
+
+</p>
+
+
+
+
+
+<p>
+
+رقم القرار:
+TR-2026-125
+
+</p>
+
+
+
+
+
+
+
+<span class="status active">
+
+معتمد
+
+</span>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="actions">
+
+
+<button class="edit">
+
+
+<i class="fa-solid fa-pen"></i>
+
+
+</button>
+
+
+
+
+
+<button class="delete">
+
+
+<i class="fa-solid fa-trash"></i>
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TRANSFER CARD 2 -->
+
+
+
+<div class="transfer-card">
+
+
+
+
+
+<div class="transfer-icon">
+
+
+<i class="fa-solid fa-earth-europe"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="transfer-info">
+
+
+
+<h3>
+محمد علي حسن
+</h3>
+
+
+
+
+<p>
+
+الرقم الذاتي:
+100235
+
+</p>
+
+
+
+
+
+<p>
+
+نوع النقل:
+نقل خارجي
+
+</p>
+
+
+
+
+
+<p>
+
+من:
+وزارة الشؤون الاجتماعية
+
+</p>
+
+
+
+
+
+<p>
+
+إلى:
+وزارة أخرى
+
+</p>
+
+
+
+
+
+<p>
+
+تاريخ النقل:
+10/07/2026
+
+</p>
+
+
+
+
+
+<p>
+
+رقم القرار:
+TR-2026-126
+
+</p>
+
+
+
+
+
+
+
+<span class="status vacation">
+
+قيد الدراسة
+
+</span>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="actions">
+
+
+<button class="edit">
+
+
+<i class="fa-solid fa-pen"></i>
+
+
+</button>
+
+
+
+
+
+<button class="delete">
+
+
+<i class="fa-solid fa-trash"></i>
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<!-- ================= RIGHT PANEL ================= -->
+
+
+<div class="right-panel">
+
+
+
+
+
+
+
+<!-- ================= ACTIVITY ================= -->
+
+
+<div class="activity-box">
+
+
+
+<div class="section-header">
+
+
+<h2>
+آخر نشاطات النقل
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-truck-moving"></i>
+
+
+<div>
+
+
+<h4>
+تم اعتماد عملية نقل جديدة
+</h4>
+
+
+<span>
+منذ 10 دقائق
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-building"></i>
+
+
+<div>
+
+
+<h4>
+تم نقل موظف داخلياً
+</h4>
+
+
+<span>
+منذ ساعة
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-file-signature"></i>
+
+
+<div>
+
+
+<h4>
+تم إصدار قرار نقل
+</h4>
+
+
+<span>
+اليوم
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+
+<div class="quick-actions">
+
+
+
+<div class="section-header">
+
+
+<h2>
+الإجراءات السريعة
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<button onclick="openTransferModal()">
+
+
+
+<i class="fa-solid fa-plus"></i>
+
+
+إضافة طلب نقل
+
+
+
+</button>
+
+
+
+
+
+
+
+
+<button>
+
+
+
+<i class="fa-solid fa-print"></i>
+
+
+طباعة سجل النقل
+
+
+
+</button>
+
+
+
+
+
+
+
+
+<button>
+
+
+
+<i class="fa-solid fa-file-export"></i>
+
+
+تصدير تقرير النقل
+
+
+
+</button>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= REPORTS ================= -->
+
+
+<div class="activity-box">
+
+
+
+<div class="section-header">
+
+
+<h2>
+تقارير النقل
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-users"></i>
+
+
+<div>
+
+
+<h4>
+كشف الموظفين المنقولين
+</h4>
+
+
+<span>
+540 موظف
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-chart-line"></i>
+
+
+<div>
+
+
+<h4>
+إحصائية النقل السنوية
+</h4>
+
+
+<span>
+تقرير 2026
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-clock"></i>
+
+
+<div>
+
+
+<h4>
+طلبات قيد الدراسة
+</h4>
+
+
+<span>
+18 طلب
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- ================= TRANSFER MODAL ================= -->
+
+
+<div class="modal" id="transferModal">
+
+
+
+
+
+<div class="modal-content">
+
+
+
+
+
+
+<div class="modal-header">
+
+
+<h2>
+إضافة عملية نقل جديدة
+</h2>
+
+
+
+
+<button onclick="closeTransferModal()">
+
+
+
+<i class="fa-solid fa-xmark"></i>
+
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+اسم الموظف
+</label>
+
+
+<input type="text"
+placeholder="أدخل اسم الموظف">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+الرقم الذاتي
+</label>
+
+
+<input type="text"
+placeholder="رقم الموظف">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+نوع النقل
+</label>
+
+
+
+<select>
+
+
+<option>
+نقل داخلي
+</option>
+
+
+<option>
+نقل خارجي
+</option>
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+الجهة الحالية
+</label>
+
+
+<input type="text"
+placeholder="المديرية الحالية">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+الجهة الجديدة
+</label>
+
+
+<input type="text"
+placeholder="المديرية الجديدة">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+رقم القرار
+</label>
+
+
+<input type="text"
+placeholder="TR-2026-000">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+تاريخ النقل
+</label>
+
+
+<input type="date">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+ملاحظات
+</label>
+
+
+<input type="text"
+placeholder="ملاحظات إضافية">
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="modal-footer">
+
+
+
+
+
+<button class="save-btn">
+
+
+حفظ النقل
+
+
+</button>
+
+
+
+
+
+
+
+<button class="cancel-btn"
+onclick="closeTransferModal()">
+
+
+
+إلغاء
+
+
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/animations.js"></script>
+<script src="../assets/js/employee-transfers.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

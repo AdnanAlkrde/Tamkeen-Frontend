@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+إدارة التعيينات | صندوق المعونة الاجتماعية
+</title>
+
+
+
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/css/animations.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+
+
+
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="../assets/css/appointments.css">
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<div id="app-sidebar"></div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+
+<main class="main-content">
+
+
+
+
+
+
+<!-- ================= HEADER ================= -->
+
+
+<div id="app-header" data-title="إدارة التعيينات" data-subtitle="متابعة قرارات التعيين والتكليف والنقل الوظيفي" data-search="ابحث عن موظف أو قرار..."></div>
+
+
+
+
+
+
+
+
+
+<!-- ================= DASHBOARD ================= -->
+
+
+<section class="dashboard">
+
+
+
+
+
+
+
+<!-- ================= WELCOME BOX ================= -->
+
+
+<div class="welcome-box">
+
+
+
+
+
+<div>
+
+
+
+<h2>
+<i class="fa-solid fa-clipboard-list"></i> نظام التعيينات
+</h2>
+
+
+
+
+
+
+
+<p>
+
+إدارة قرارات التعيين والتكليف والنقل للموظفين
+
+<br>
+
+متابعة المسار الوظيفي للموظف
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="date">
+
+
+<i class="fa-regular fa-calendar-days"></i>
+
+
+
+<span>
+20 يوليو 2026
+</span>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+
+<div class="cards">
+
+
+
+
+
+
+
+<div class="card">
+
+
+
+<div class="card-icon green">
+
+
+<i class="fa-solid fa-user-plus"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+إجمالي التعيينات
+</h3>
+
+
+
+<span>
+320 قرار
+</span>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+
+<div class="card-icon blue">
+
+
+<i class="fa-solid fa-file-signature"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+قرارات جديدة
+</h3>
+
+
+
+<span>
+25 قرار
+</span>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+
+<div class="card-icon orange">
+
+
+<i class="fa-solid fa-arrows-left-right"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+حالات النقل
+</h3>
+
+
+
+<span>
+18 موظف
+</span>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+
+<div class="card-icon red">
+
+
+<i class="fa-solid fa-user-clock"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-info">
+
+
+<h3>
+التكليفات الحالية
+</h3>
+
+
+
+<span>
+45 موظف
+</span>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- ================= APPOINTMENTS CONTENT ================= -->
+
+
+<div class="dashboard-content">
+
+
+
+
+
+
+
+<!-- ================= APPOINTMENTS LIST ================= -->
+
+
+<div class="table-section">
+
+
+
+
+
+
+<div class="section-header">
+
+
+<h2>
+سجل قرارات التعيين
+</h2>
+
+
+
+
+
+
+
+<button class="add-btn"
+onclick="openAppointmentModal()">
+
+
+
+<i class="fa-solid fa-plus"></i>
+
+
+
+إضافة قرار تعيين
+
+
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="appointment-list">
+
+
+
+
+
+
+
+<!-- Appointment Card 1 -->
+
+
+<div class="appointment-card">
+
+
+
+
+
+
+<div class="appointment-icon">
+
+
+<i class="fa-solid fa-file-signature"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="appointment-info">
+
+
+
+
+
+<h3>
+أحمد خالد المصري
+</h3>
+
+
+
+
+
+
+
+<p>
+رقم القرار:
+125 / 2026
+</p>
+
+
+
+
+
+
+
+<p>
+نوع القرار:
+تعيين أصيل
+</p>
+
+
+
+
+
+
+
+<p>
+القسم:
+الإدارة المالية
+</p>
+
+
+
+
+
+
+
+<p>
+الوظيفة:
+محاسب
+</p>
+
+
+
+
+
+
+
+<p>
+تاريخ المباشرة:
+01/07/2026
+</p>
+
+
+
+
+
+
+
+<p>
+
+الحالة:
+
+<span class="status active">
+
+ساري
+
+</span>
+
+
+</p>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="actions">
+
+
+
+
+
+<button class="edit">
+
+
+<i class="fa-solid fa-pen"></i>
+
+
+</button>
+
+
+
+
+
+
+<button class="delete">
+
+
+<i class="fa-solid fa-trash"></i>
+
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Appointment Card 2 -->
+
+
+<div class="appointment-card">
+
+
+
+
+
+
+<div class="appointment-icon blue">
+
+
+<i class="fa-solid fa-user-tie"></i>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="appointment-info">
+
+
+
+
+
+<h3>
+محمد علي حسن
+</h3>
+
+
+
+
+
+
+
+<p>
+رقم القرار:
+98 / 2026
+</p>
+
+
+
+
+
+
+
+<p>
+نوع القرار:
+تكليف
+</p>
+
+
+
+
+
+
+
+<p>
+القسم:
+الموارد البشرية
+</p>
+
+
+
+
+
+
+
+<p>
+الوظيفة:
+رئيس شعبة
+</p>
+
+
+
+
+
+
+
+<p>
+تاريخ المباشرة:
+15/06/2026
+</p>
+
+
+
+
+
+
+
+<p>
+
+الحالة:
+
+<span class="status pending">
+
+قيد التنفيذ
+
+</span>
+
+
+</p>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="actions">
+
+
+
+
+
+<button class="edit">
+
+
+<i class="fa-solid fa-pen"></i>
+
+
+</button>
+
+
+
+
+
+
+<button class="delete">
+
+
+<i class="fa-solid fa-trash"></i>
+
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= RIGHT PANEL ================= -->
+
+
+<div class="right-panel">
+
+
+
+
+
+
+
+<!-- QUICK INFO -->
+
+
+<div class="activity-box">
+
+
+
+
+
+<div class="section-header">
+
+
+<h2>
+أنواع القرارات
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-user-plus"></i>
+
+
+<div>
+
+
+<h4>
+تعيين جديد
+</h4>
+
+
+<span>
+قرار تثبيت موظف جديد
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-user-clock"></i>
+
+
+<div>
+
+
+<h4>
+تكليف
+</h4>
+
+
+<span>
+تكليف مؤقت أو دائم
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-right-left"></i>
+
+
+<div>
+
+
+<h4>
+نقل وظيفي
+</h4>
+
+
+<span>
+تغيير القسم أو المكان
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- ================= REPORTS ================= -->
+
+
+<div class="activity-box">
+
+
+
+
+
+<div class="section-header">
+
+
+<h2>
+تقارير التعيينات
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-file-lines"></i>
+
+
+
+<div>
+
+
+<h4>
+كشف جميع قرارات التعيين
+</h4>
+
+
+
+<span>
+جميع القرارات المسجلة بالنظام
+</span>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-users"></i>
+
+
+
+<div>
+
+
+<h4>
+تعيينات حسب القسم
+</h4>
+
+
+
+<span>
+تقرير توزيع الموظفين
+</span>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="activity">
+
+
+<i class="fa-solid fa-chart-column"></i>
+
+
+
+<div>
+
+
+<h4>
+إحصائيات التعيين السنوية
+</h4>
+
+
+
+<span>
+تحليل عدد القرارات
+</span>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+
+<div class="quick-actions">
+
+
+
+
+
+<div class="section-header">
+
+
+<h2>
+الإجراءات السريعة
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<button onclick="openAppointmentModal()">
+
+
+
+<i class="fa-solid fa-plus"></i>
+
+
+
+إضافة قرار تعيين
+
+
+
+</button>
+
+
+
+
+
+
+
+<button>
+
+
+<i class="fa-solid fa-print"></i>
+
+
+
+طباعة قرار
+
+
+
+</button>
+
+
+
+
+
+
+
+<button>
+
+
+<i class="fa-solid fa-file-export"></i>
+
+
+
+تصدير البيانات
+
+
+
+</button>
+
+
+
+
+
+
+
+<button>
+
+
+<i class="fa-solid fa-filter"></i>
+
+
+
+بحث متقدم
+
+
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= MODAL ================= -->
+
+
+<div class="modal" id="appointmentModal">
+
+
+
+
+
+<div class="modal-content">
+
+
+
+
+
+
+
+<div class="modal-header">
+
+
+
+<h2>
+إضافة قرار تعيين
+</h2>
+
+
+
+
+
+
+<button onclick="closeAppointmentModal()">
+
+
+
+<i class="fa-solid fa-xmark"></i>
+
+
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+اسم الموظف
+</label>
+
+
+
+<input type="text"
+placeholder="أدخل اسم الموظف">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+رقم القرار
+</label>
+
+
+
+<input type="text"
+placeholder="رقم القرار">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+نوع القرار
+</label>
+
+
+
+<select>
+
+
+<option>
+تعيين أصيل
+</option>
+
+
+<option>
+تكليف
+</option>
+
+
+<option>
+نقل
+</option>
+
+
+
+<option>
+ندب
+</option>
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+القسم
+</label>
+
+
+
+<input type="text"
+placeholder="القسم">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+الوظيفة
+</label>
+
+
+
+<input type="text"
+placeholder="المسمى الوظيفي">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+تاريخ المباشرة
+</label>
+
+
+
+<input type="date">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+حالة القرار
+</label>
+
+
+
+<select>
+
+
+<option>
+ساري
+</option>
+
+
+
+<option>
+قيد التنفيذ
+</option>
+
+
+
+<option>
+منتهي
+</option>
+
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="modal-footer">
+
+
+
+
+
+<button class="save-btn">
+
+
+
+حفظ
+
+
+
+</button>
+
+
+
+
+
+
+
+
+<button class="cancel-btn"
+onclick="closeAppointmentModal()">
+
+
+
+إلغاء
+
+
+
+</button>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/animations.js"></script>
+<script src="../assets/js/appointments.js"></script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
