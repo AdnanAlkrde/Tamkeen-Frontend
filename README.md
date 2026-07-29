@@ -2,6 +2,12 @@
 
 A modern, responsive, and scalable Front-End Dashboard for the **Social Assistance Fund Management System**, built with HTML, CSS, and JavaScript.
 
+![HTML5](https://img.shields.io/badge/HTML5-Frontend-orange)
+![CSS3](https://img.shields.io/badge/CSS3-Frontend-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Responsive](https://img.shields.io/badge/Design-Responsive-green)
+![GitHub](https://img.shields.io/badge/Hosted-GitHub-black)
+
 ---
 
 ## 📖 Overview
