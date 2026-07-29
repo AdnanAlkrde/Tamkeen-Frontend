@@ -37,6 +37,23 @@ Tamkeen is a modern administrative dashboard designed to simplify the management
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 👥 Employee Management
+![Employee Management](screenshots/employees.png)
+
+### 💼 Human Resources
+![Human Resources](screenshots/hr.png)
+
+### 💰 Finance
+![Finance](screenshots/finance.png)
+
+### 📊 Reports
+![Reports](screenshots/reports.png)
+
 ## 📂 Project Structure
 
 ```text
