@@ -113,7 +113,7 @@
             '</div>' +
             '<div class="notification"><i class="fa-regular fa-bell"></i><span class="badge">4</span></div>' +
             '<div class="user">' +
-            '<img src="../assets/images/user.jpg" alt="User">' +
+            '<img src="assets/images/user.jpg" alt="User">' +
             '<div><h4>مدير النظام</h4><span>Administrator</span></div>' +
             '</div>' +
             '</div>';

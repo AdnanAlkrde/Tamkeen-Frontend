@@ -3,47 +3,46 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>
-        دليل الحسابات | الإدارة المالية
-    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
-    <!-- Google Font -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/animations.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+<title>
+إدارة الموازنة | الإدارة المالية
+</title>
 
 
 
-    <!-- Font Awesome -->
+<!-- Google Font -->
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
 
 
 
-    <!-- CSS -->
+<!-- Font Awesome -->
 
-    <link rel="stylesheet" href="../assets/css/accounts.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="assets/css/budget.css">
 
 
 
 </head>
-
 
 
 
@@ -52,12 +51,10 @@
 
 
 
-
 <!-- ================= SIDEBAR ================= -->
 
 
 <div id="app-sidebar"></div>
-
 
 
 
@@ -81,9 +78,9 @@
 <!-- ================= HEADER ================= -->
 
 
-<div id="app-header" data-title="دليل الحسابات" data-subtitle="إدارة الهيكل المحاسبي وحسابات الصندوق" data-search="البحث عن حساب..."></div>
+<div id="app-header" data-title="إدارة الموازنة" data-subtitle="متابعة الاعتمادات والمصروفات المالية السنوية" data-search="البحث في الموازنة..."></div>
 
-<!-- ================= ACCOUNTS SECTION ================= -->
+<!-- ================= BUDGET SECTION ================= -->
 
 
 <section class="dashboard">
@@ -105,18 +102,18 @@
 
 
 <h2>
-<i class="fa-solid fa-folder-open"></i> دليل الحسابات المحاسبي
+<i class="fa-solid fa-wallet"></i> الموازنة السنوية
 </h2>
 
 
 
 <p>
 
-إدارة جميع الحسابات المالية الخاصة بصندوق المعونة الاجتماعية
+إدارة ومتابعة الاعتمادات المالية والمصروفات الخاصة بصندوق المعونة الاجتماعية
 
 <br>
 
-حسابات رئيسية - حسابات فرعية - أرصدة - حركات مالية
+السنة المالية 2026 - الاعتماد العام - أبواب الصرف
 
 </p>
 
@@ -138,8 +135,7 @@ onclick="openModal()">
 <i class="fa-solid fa-plus"></i>
 
 
-
-إضافة حساب جديد
+إضافة اعتماد مالي
 
 
 
@@ -172,28 +168,27 @@ onclick="openModal()">
 
 <div class="stat-icon blue">
 
-
-<i class="fa-solid fa-folder-tree"></i>
-
+<i class="fa-solid fa-wallet"></i>
 
 </div>
+
 
 
 <div>
 
 
 <h3>
-إجمالي الحسابات
+إجمالي الموازنة
 </h3>
 
 
+
 <strong>
-856
+50 مليار ل.س
 </strong>
 
 
 </div>
-
 
 
 </div>
@@ -212,27 +207,28 @@ onclick="openModal()">
 <div class="stat-icon green">
 
 
-<i class="fa-solid fa-folder-open"></i>
+<i class="fa-solid fa-money-bill-trend-up"></i>
 
 
 </div>
+
 
 
 <div>
 
 
 <h3>
-الحسابات الرئيسية
+المصروف الفعلي
 </h3>
 
 
+
 <strong>
-25
+32 مليار ل.س
 </strong>
 
 
 </div>
-
 
 
 </div>
@@ -251,27 +247,28 @@ onclick="openModal()">
 <div class="stat-icon orange">
 
 
-<i class="fa-solid fa-layer-group"></i>
+<i class="fa-solid fa-chart-pie"></i>
 
 
 </div>
+
 
 
 <div>
 
 
 <h3>
-الحسابات الفرعية
+نسبة الصرف
 </h3>
 
 
+
 <strong>
-831
+64%
 </strong>
 
 
 </div>
-
 
 
 </div>
@@ -290,29 +287,30 @@ onclick="openModal()">
 <div class="stat-icon red">
 
 
-<i class="fa-solid fa-money-bill-trend-up"></i>
+<i class="fa-solid fa-coins"></i>
 
 
 </div>
+
 
 
 <div>
 
 
 <h3>
-إجمالي الأرصدة
+المتبقي
 </h3>
 
 
+
 <strong>
-12.5 مليار
+18 مليار ل.س
 </strong>
 
 
 </div>
 
 
-
 </div>
 
 
@@ -329,33 +327,10 @@ onclick="openModal()">
 
 
 
-<!-- ================= ACCOUNTS CONTENT ================= -->
+<!-- ================= BUDGET SECTIONS ================= -->
 
 
-<div class="accounts-container">
-
-
-
-
-
-
-
-<!-- ================= TREE ================= -->
-
-
-<div class="tree-box">
-
-
-
-<div class="section-header">
-
-
-<h2>
-شجرة الحسابات
-</h2>
-
-
-</div>
+<div class="budget-cards">
 
 
 
@@ -363,118 +338,39 @@ onclick="openModal()">
 
 
 
+<div class="budget-card">
 
 
-<ul class="account-tree">
-
-
-
-
-
-<li>
-
-
-<div class="tree-item">
+<div class="budget-icon blue">
 
 
 <i class="fa-solid fa-building-columns"></i>
 
 
-<strong>
-الأصول
-</strong>
-
-
 </div>
 
 
 
-<ul>
+<div>
 
 
-<li>
-
-<div class="tree-item child">
-
-
-<i class="fa-solid fa-wallet"></i>
-
-
-النقدية والصندوق
-
-
-</div>
-
-
-</li>
+<h3>
+الباب الأول
+</h3>
 
 
 
+<p>
+الرواتب والأجور
+</p>
 
 
-<li>
-
-<div class="tree-item child">
-
-
-<i class="fa-solid fa-building"></i>
-
-
-الحسابات البنكية
+<span>
+12,000,000,000 ل.س
+</span>
 
 
 </div>
-
-
-</li>
-
-
-
-
-
-<li>
-
-<div class="tree-item child">
-
-
-<i class="fa-solid fa-box"></i>
-
-
-الموجودات
-
-
-</div>
-
-
-</li>
-
-
-</ul>
-
-
-
-</li>
-
-
-
-
-
-
-
-
-
-<li>
-
-
-<div class="tree-item">
-
-
-<i class="fa-solid fa-file-invoice"></i>
-
-
-<strong>
-الالتزامات
-</strong>
 
 
 </div>
@@ -483,187 +379,137 @@ onclick="openModal()">
 
 
 
-<ul>
 
 
-<li>
 
 
-<div class="tree-item child">
+<div class="budget-card">
+
+
+<div class="budget-icon green">
 
 
 <i class="fa-solid fa-hand-holding-dollar"></i>
 
 
-المستحقات
+</div>
+
+
+
+<div>
+
+
+<h3>
+الباب الثاني
+</h3>
+
+
+
+<p>
+النفقات التشغيلية
+</p>
+
+
+<span>
+8,500,000,000 ل.س
+</span>
+
+
+</div>
 
 
 </div>
 
 
 
-</li>
-
-
-
-<li>
-
-
-<div class="tree-item child">
-
-
-<i class="fa-solid fa-receipt"></i>
-
-
-الديون
-
-
-</div>
-
-
-
-</li>
-
-
-
-</ul>
-
-
-
-</li>
 
 
 
 
 
 
+<div class="budget-card">
 
 
-
-<li>
-
-
-<div class="tree-item">
+<div class="budget-icon orange">
 
 
-<i class="fa-solid fa-chart-line"></i>
-
-
-<strong>
-الإيرادات
-</strong>
+<i class="fa-solid fa-people-group"></i>
 
 
 </div>
 
 
 
-<ul>
+<div>
 
 
-<li>
+<h3>
+الباب الثالث
+</h3>
 
 
-<div class="tree-item child">
+
+<p>
+المساعدات الاجتماعية
+</p>
 
 
-<i class="fa-solid fa-coins"></i>
-
-
-إيرادات الدعم
+<span>
+25,000,000,000 ل.س
+</span>
 
 
 </div>
-
-
-</li>
-
-
-</ul>
-
-
-
-</li>
-
-
-
-
-
-
-
-
-
-<li>
-
-
-<div class="tree-item">
-
-
-<i class="fa-solid fa-money-bill-wave"></i>
-
-
-<strong>
-المصروفات
-</strong>
 
 
 </div>
 
 
 
-<ul>
-
-
-<li>
-
-
-<div class="tree-item child">
-
-
-<i class="fa-solid fa-users"></i>
-
-
-مصروفات الموظفين
-
-
-</div>
-
-
-</li>
 
 
 
 
 
-<li>
+
+<div class="budget-card">
 
 
-<div class="tree-item child">
+<div class="budget-icon red">
 
 
-<i class="fa-solid fa-file-circle-dollar"></i>
-
-
-المساعدات المالية
+<i class="fa-solid fa-screwdriver-wrench"></i>
 
 
 </div>
 
 
-</li>
+
+<div>
 
 
-</ul>
-
-
-
-</li>
-
-
+<h3>
+الباب الرابع
+</h3>
 
 
 
-</ul>
+<p>
+الصيانة والتجهيزات
+</p>
+
+
+<span>
+4,500,000,000 ل.س
+</span>
+
+
+</div>
+
+
+</div>
+
 
 
 
@@ -672,7 +518,7 @@ onclick="openModal()">
 
 </div>
 
-<!-- ================= ACCOUNTS TABLE ================= -->
+<!-- ================= BUDGET TABLE ================= -->
 
 
 <div class="table-section">
@@ -685,9 +531,8 @@ onclick="openModal()">
 
 
 <h2>
-قائمة الحسابات
+تفاصيل الموازنة
 </h2>
-
 
 
 
@@ -724,31 +569,37 @@ onclick="openModal()">
 
 
 <th>
-رقم الحساب
+رقم الباب
 </th>
 
 
 
 <th>
-اسم الحساب
+اسم الباب
 </th>
 
 
 
 <th>
-نوع الحساب
+الاعتماد المخصص
 </th>
 
 
 
 <th>
-الحساب الأب
+المصروف
 </th>
 
 
 
 <th>
-الرصيد
+المتبقي
+</th>
+
+
+
+<th>
+نسبة التنفيذ
 </th>
 
 
@@ -788,40 +639,64 @@ onclick="openModal()">
 
 
 <td>
-1001
+01
 </td>
 
 
 
 <td>
-الصندوق الرئيسي
+الرواتب والأجور
 </td>
 
 
 
 <td>
-أصول
+12,000,000,000 ل.س
 </td>
 
 
 
 <td>
-النقدية
+7,500,000,000 ل.س
 </td>
 
 
 
 <td>
-450,000,000 ل.س
+4,500,000,000 ل.س
 </td>
 
 
 
 <td>
+
+<div class="progress">
+
+
+<span style="width:62%"></span>
+
+
+</div>
+
+
+<small>
+62%
+</small>
+
+
+</td>
+
+
+
+<td>
+
 
 <span class="status active">
-فعال
+
+ضمن الخطة
+
 </span>
+
 
 </td>
 
@@ -856,7 +731,6 @@ onclick="openModal()">
 </td>
 
 
-
 </tr>
 
 
@@ -871,123 +745,64 @@ onclick="openModal()">
 
 
 <td>
-1002
+02
 </td>
 
 
 
 <td>
-الحساب البنكي الرئيسي
+النفقات التشغيلية
 </td>
 
 
 
 <td>
-أصول
+8,500,000,000 ل.س
 </td>
 
 
 
 <td>
-البنوك
+6,700,000,000 ل.س
 </td>
 
 
 
 <td>
-2,500,000,000 ل.س
-</td>
-
-
-
-<td>
-
-<span class="status active">
-فعال
-</span>
-
+1,800,000,000 ل.س
 </td>
 
 
 
 <td>
 
-
-<button class="view">
-
-<i class="fa-solid fa-eye"></i>
-
-</button>
+<div class="progress">
 
 
-
-<button class="edit">
-
-<i class="fa-solid fa-pen"></i>
-
-</button>
+<span style="width:78%"></span>
 
 
+</div>
 
-<button class="delete">
 
-<i class="fa-solid fa-trash"></i>
-
-</button>
+<small>
+78%
+</small>
 
 
 </td>
 
 
 
-</tr>
-
-
-
-
-
-
-
-
-
-<tr>
-
-
 <td>
-2001
-</td>
 
-
-
-<td>
-مستحقات الموظفين
-</td>
-
-
-
-<td>
-التزامات
-</td>
-
-
-
-<td>
-المصاريف
-</td>
-
-
-
-<td>
-120,000,000 ل.س
-</td>
-
-
-
-<td>
 
 <span class="status vacation">
-معلق
+
+قريب من الحد
+
 </span>
+
 
 </td>
 
@@ -1022,7 +837,6 @@ onclick="openModal()">
 </td>
 
 
-
 </tr>
 
 
@@ -1037,7 +851,7 @@ onclick="openModal()">
 
 
 <td>
-4001
+03
 </td>
 
 
@@ -1049,28 +863,52 @@ onclick="openModal()">
 
 
 <td>
-مصروفات
+25,000,000,000 ل.س
 </td>
 
 
 
 <td>
-النفقات العامة
+15,500,000,000 ل.س
 </td>
 
 
 
 <td>
-5,700,000,000 ل.س
+9,500,000,000 ل.س
 </td>
 
 
 
 <td>
+
+<div class="progress">
+
+
+<span style="width:55%"></span>
+
+
+</div>
+
+
+<small>
+55%
+</small>
+
+
+</td>
+
+
+
+<td>
+
 
 <span class="status active">
-فعال
+
+جيد
+
 </span>
+
 
 </td>
 
@@ -1105,8 +943,114 @@ onclick="openModal()">
 </td>
 
 
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+04
+</td>
+
+
+
+<td>
+الصيانة والتجهيزات
+</td>
+
+
+
+<td>
+4,500,000,000 ل.س
+</td>
+
+
+
+<td>
+4,000,000,000 ل.س
+</td>
+
+
+
+<td>
+500,000,000 ل.س
+</td>
+
+
+
+<td>
+
+<div class="progress">
+
+
+<span style="width:90%"></span>
+
+
+</div>
+
+
+<small>
+90%
+</small>
+
+
+</td>
+
+
+
+<td>
+
+
+<span class="status danger">
+
+تجاوز
+
+</span>
+
+
+</td>
+
+
+
+<td>
+
+
+<button class="view">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+</td>
+
 
 </tr>
+
 
 
 
@@ -1154,7 +1098,7 @@ onclick="openModal()">
 
 
 <h2>
-آخر الحركات المحاسبية
+آخر تعديلات الموازنة
 </h2>
 
 
@@ -1165,7 +1109,6 @@ onclick="openModal()">
 <i class="fa-solid fa-arrow-left"></i>
 
 </a>
-
 
 
 </div>
@@ -1188,12 +1131,12 @@ onclick="openModal()">
 
 
 <h4>
-تم إنشاء حساب جديد (المساعدات الطارئة)
+تم إضافة اعتماد جديد لباب المساعدات
 </h4>
 
 
 <span>
-منذ 15 دقيقة
+منذ 20 دقيقة
 </span>
 
 
@@ -1220,12 +1163,12 @@ onclick="openModal()">
 
 
 <h4>
-تم تعديل رصيد الحساب البنكي
+تم تعديل قيمة الباب الثاني
 </h4>
 
 
 <span>
-منذ ساعة
+منذ ساعتين
 </span>
 
 
@@ -1245,14 +1188,14 @@ onclick="openModal()">
 <div class="activity">
 
 
-<i class="fa-solid fa-trash"></i>
+<i class="fa-solid fa-file-invoice-dollar"></i>
 
 
 <div>
 
 
 <h4>
-تم إيقاف حساب فرعي
+تم اعتماد خطة الصرف الشهرية
 </h4>
 
 
@@ -1312,7 +1255,7 @@ onclick="openModal()">
 <i class="fa-solid fa-plus"></i>
 
 
-إضافة حساب جديد
+إضافة اعتماد جديد
 
 
 </button>
@@ -1329,7 +1272,7 @@ onclick="openModal()">
 <i class="fa-solid fa-file-export"></i>
 
 
-تصدير دليل الحسابات
+تصدير تقرير الموازنة
 
 
 </button>
@@ -1346,7 +1289,7 @@ onclick="openModal()">
 <i class="fa-solid fa-print"></i>
 
 
-طباعة الحسابات
+طباعة الموازنة
 
 
 </button>
@@ -1360,10 +1303,10 @@ onclick="openModal()">
 <button>
 
 
-<i class="fa-solid fa-chart-line"></i>
+<i class="fa-solid fa-chart-column"></i>
 
 
-تقرير الأرصدة
+تحليل الصرف
 
 
 </button>
@@ -1382,7 +1325,7 @@ onclick="openModal()">
 
 
 
-<!-- ================= ACCOUNT ALERTS ================= -->
+<!-- ================= ALERTS ================= -->
 
 
 <div class="activity-box">
@@ -1393,7 +1336,7 @@ onclick="openModal()">
 
 
 <h2>
-التنبيهات
+التنبيهات المالية
 </h2>
 
 
@@ -1415,7 +1358,7 @@ onclick="openModal()">
 
 <p>
 
-يوجد 12 حساب يحتاج إلى مراجعة.
+الباب الرابع وصل إلى نسبة صرف 90%.
 
 </p>
 
@@ -1438,7 +1381,7 @@ onclick="openModal()">
 
 <p>
 
-يوجد حسابات بدون حركة مالية.
+يوجد 5 طلبات اعتماد بانتظار المراجعة.
 
 </p>
 
@@ -1461,7 +1404,7 @@ onclick="openModal()">
 
 <p>
 
-تم تحديث شجرة الحسابات بنجاح.
+تم تحديث بيانات الموازنة بنجاح.
 
 </p>
 
@@ -1500,10 +1443,10 @@ onclick="openModal()">
 
 
 
-<!-- ================= ADD ACCOUNT MODAL ================= -->
+<!-- ================= ADD BUDGET MODAL ================= -->
 
 
-<div class="modal" id="accountModal">
+<div class="modal" id="budgetModal">
 
 
 
@@ -1520,7 +1463,7 @@ onclick="openModal()">
 
 
 <h2>
-إضافة حساب جديد
+إضافة اعتماد مالي
 </h2>
 
 
@@ -1558,12 +1501,12 @@ onclick="openModal()">
 
 
 <label>
-رقم الحساب
+رقم الباب
 </label>
 
 
 <input type="text"
-placeholder="مثال 5001">
+placeholder="مثال 05">
 
 
 
@@ -1581,12 +1524,12 @@ placeholder="مثال 5001">
 
 
 <label>
-اسم الحساب
+اسم الباب
 </label>
 
 
 <input type="text"
-placeholder="اسم الحساب">
+placeholder="اسم بند الموازنة">
 
 
 
@@ -1604,58 +1547,58 @@ placeholder="اسم الحساب">
 
 
 <label>
-نوع الحساب
-</label>
-
-
-<input type="text"
-placeholder="أصول - مصروفات - إيرادات">
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="form-group">
-
-
-<label>
-الحساب الأب
-</label>
-
-
-<input type="text"
-placeholder="الحساب الرئيسي">
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="form-group">
-
-
-<label>
-الرصيد الافتتاحي
+قيمة الاعتماد
 </label>
 
 
 <input type="number"
-placeholder="الرصيد">
+placeholder="المبلغ">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+السنة المالية
+</label>
+
+
+<input type="text"
+value="2026">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+ملاحظات
+</label>
+
+
+<textarea
+placeholder="أي ملاحظات إضافية"></textarea>
 
 
 
@@ -1674,7 +1617,7 @@ placeholder="الرصيد">
 <i class="fa-solid fa-check"></i>
 
 
-حفظ الحساب
+حفظ الاعتماد
 
 
 
@@ -1728,9 +1671,9 @@ placeholder="الرصيد">
 <!-- ================= JAVASCRIPT ================= -->
 
 
-<script src="../assets/js/layout.js"></script>
-<script src="../assets/js/animations.js"></script>
-<script src="../assets/js/accounts.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/budget.js"></script>
 
 
 

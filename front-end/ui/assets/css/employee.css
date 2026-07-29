@@ -538,3 +538,30 @@
     font-size: 25px;
   }
 }
+
+
+.badge-status{
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:700;
+display:inline-block;
+}
+
+
+.status-active{
+background:#dcfce7;
+color:#15803d;
+}
+
+
+.status-pending{
+background:#fef3c7;
+color:#b45309;
+}
+
+
+.status-deleted{
+background:#fee2e2;
+color:#dc2626;
+}

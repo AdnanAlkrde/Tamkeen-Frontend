@@ -89,8 +89,8 @@ body {
 ========================= */
 
 .accounts-container {
-  display: grid;
-  grid-template-columns: minmax(280px, 350px) minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 25px;
   width: 100%;
   margin-bottom: 25px;
@@ -219,7 +219,7 @@ td button.delete {
 
 .dashboard-content {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  grid-template-columns: minmax(0, 1fr) 350px;
   gap: 25px;
   margin-top: 25px;
   align-items: start;
@@ -368,3 +368,19 @@ td button.delete {
     width: 95%;
   }
 }
+
+.right-panel{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    min-width:0;
+}
+
+.activity-box{
+    min-width:0;
+}
+
+.quick-actions{
+    min-width:0;
+}
+
