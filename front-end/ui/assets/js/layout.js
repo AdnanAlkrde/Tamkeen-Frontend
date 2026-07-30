@@ -30,7 +30,7 @@
         { href: "finance.html", icon: "fa-solid fa-money-bill-wave", label: "الإدارة المالية" },
         { href: "financial-reports.html", icon: "fa-solid fa-chart-column", label: "التقارير" },
         { href: "hr.html", icon: "fa-solid fa-user-group", label: "الموارد البشرية" },
-        { href: "#", icon: "fa-solid fa-gear", label: "الإعدادات" }
+        { href: "settings.html", icon: "fa-solid fa-gear", label: "الإعدادات" }
     ];
 
     // أي قسم رئيسي يجب أن يظهر "فعّال" لكل صفحة فرعية

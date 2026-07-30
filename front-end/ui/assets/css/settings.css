@@ -1,0 +1,1630 @@
+/* =========================================================
+   SETTINGS.CSS
+   Tamkeen ERP
+   Settings Page
+========================================================= */
+
+
+/* =========================
+        RESET
+========================= */
+
+
+.settings-page *{
+
+    box-sizing:border-box;
+
+}
+
+
+
+.settings-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    animation:fadeIn .5s ease;
+
+}
+
+
+
+/* =========================
+        VARIABLES
+========================= */
+
+
+:root{
+
+    --primary:#16a34a;
+
+    --primary-dark:#15803d;
+
+    --primary-light:#22c55e;
+
+    --card:#ffffff;
+
+    --border:#e5e7eb;
+
+    --text:#1f2937;
+
+    --muted:#6b7280;
+
+    --danger:#dc2626;
+
+}
+
+
+
+
+
+
+/* =========================
+            CARD
+========================= */
+
+
+.settings-page .card{
+
+
+    background:var(--card);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border:1px solid rgba(22,163,74,.08);
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.06);
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+
+}
+
+
+
+
+
+.settings-page .card::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:100%;
+
+    height:5px;
+
+
+    background:linear-gradient(
+
+    90deg,
+
+    var(--primary),
+
+    var(--primary-light)
+
+    );
+
+
+}
+
+
+
+
+.settings-page .card:hover{
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 20px 40px rgba(22,163,74,.12);
+
+
+}
+
+
+
+
+
+
+/* =========================
+        CARD HEADER
+========================= */
+
+
+.settings-page .card-header{
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.settings-page .card-header h2{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:var(--primary-dark);
+
+    font-size:22px;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+.settings-page .card-header i{
+
+
+    color:var(--primary);
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+        SYSTEM INFO
+========================= */
+
+
+.info-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+.info-item{
+
+
+    background:#fff;
+
+    border:1px solid #edf2f7;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+.info-item:hover{
+
+
+    transform:translateY(-5px);
+
+
+    border-color:#bbf7d0;
+
+
+    box-shadow:
+
+    0 15px 30px rgba(22,163,74,.12);
+
+
+}
+
+
+
+
+
+
+
+.info-item span{
+
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+
+
+.info-item strong{
+
+
+    color:var(--text);
+
+    font-size:20px;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+
+.online{
+
+
+    color:var(--primary)!important;
+
+
+}
+
+
+
+
+
+.online i{
+
+
+    margin-left:6px;
+
+    color:var(--primary);
+
+
+}
+
+/* =====================================================
+                SETTINGS GRID
+===================================================== */
+
+
+.settings-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(380px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+                PROFILE CARD
+===================================================== */
+
+
+.profile-card{
+
+    text-align:center;
+
+}
+
+
+
+
+
+.profile-top img{
+
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid var(--primary);
+
+    box-shadow:
+
+    0 15px 35px rgba(22,163,74,.25);
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+.profile-top img:hover{
+
+
+    transform:scale(1.06);
+
+
+}
+
+
+
+
+
+
+
+.profile-top h3{
+
+
+    margin-top:18px;
+
+    color:var(--text);
+
+    font-size:24px;
+
+
+}
+
+
+
+
+
+
+.profile-top span{
+
+
+    display:block;
+
+    margin-top:6px;
+
+    color:var(--muted);
+
+
+}
+
+
+
+
+
+
+
+.profile-info{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    margin:30px 0;
+
+    text-align:right;
+
+
+}
+
+
+
+
+
+
+.profile-info p{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+
+.profile-info i{
+
+
+    width:20px;
+
+    color:var(--primary);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+                EDIT BUTTON
+===================================================== */
+
+
+.edit-profile-btn{
+
+
+    width:100%;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:15px;
+
+
+    background:linear-gradient(
+
+    135deg,
+
+    var(--primary),
+
+    var(--primary-light)
+
+    );
+
+
+    color:white;
+
+    font-family:"Cairo",sans-serif;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+
+.edit-profile-btn:hover{
+
+
+    transform:translateY(-4px);
+
+
+    box-shadow:
+
+    0 15px 30px rgba(22,163,74,.25);
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+                SETTING ROW
+===================================================== */
+
+
+.setting-row{
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #edf2f7;
+
+
+}
+
+
+
+
+
+.setting-row:last-child{
+
+
+    border:none;
+
+
+}
+
+
+
+
+
+
+
+.setting-row h4{
+
+
+    color:var(--text);
+
+    font-size:16px;
+
+    margin-bottom:5px;
+
+
+}
+
+
+
+
+
+
+.setting-row p{
+
+
+    color:var(--muted);
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+.setting-row strong{
+
+
+    background:#f0fdf4;
+
+    color:var(--primary-dark);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+                    SWITCH
+===================================================== */
+
+
+.switch{
+
+
+    position:relative;
+
+    width:58px;
+
+    height:30px;
+
+
+}
+
+
+
+
+
+
+.switch input{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+
+
+.slider{
+
+
+    position:absolute;
+
+    inset:0;
+
+    background:#d1d5db;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+
+
+.slider::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    top:3px;
+
+    right:4px;
+
+    width:24px;
+
+    height:24px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 3px 8px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+
+
+.switch input:checked + .slider{
+
+
+    background:var(--primary);
+
+
+}
+
+
+
+
+
+
+
+.switch input:checked + .slider::before{
+
+
+    transform:translateX(-28px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+                    SECURITY
+===================================================== */
+
+
+.security-buttons{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+
+}
+
+
+
+
+
+
+
+.security-buttons button{
+
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:#f8fafc;
+
+    color:#374151;
+
+    font-family:"Cairo",sans-serif;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+
+
+.security-buttons button:hover{
+
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+.security-buttons .danger{
+
+
+    background:var(--danger);
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+.security-buttons .danger:hover{
+
+
+    background:#b91c1c;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+                PASSWORD FORM
+===================================================== */
+
+
+.form-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+.form-group{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+
+}
+
+
+
+
+
+
+.form-group label{
+
+
+    font-weight:600;
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+
+.form-group input{
+
+
+    padding:14px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    outline:none;
+
+    font-family:"Cairo",sans-serif;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+
+.form-group input:focus{
+
+
+    border-color:var(--primary);
+
+
+    box-shadow:
+
+    0 0 0 4px rgba(22,163,74,.1);
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+                SAVE BUTTON
+===================================================== */
+
+
+.save-settings{
+
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+
+
+.save-settings button{
+
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:15px;
+
+
+    background:linear-gradient(
+
+    135deg,
+
+    var(--primary),
+
+    var(--primary-light)
+
+    );
+
+
+    color:white;
+
+    font-family:"Cairo",sans-serif;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+
+
+.save-settings button:hover{
+
+
+    transform:translateY(-4px);
+
+
+    box-shadow:
+
+    0 15px 30px rgba(22,163,74,.25);
+
+
+}
+
+/* =====================================================
+                    BACKUP
+===================================================== */
+
+
+.backup-info p{
+
+    color:var(--muted);
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.progress{
+
+
+    width:100%;
+
+    height:14px;
+
+    background:#e5e7eb;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+
+.progress-bar{
+
+
+    width:75%;
+
+    height:100%;
+
+    border-radius:30px;
+
+
+    background:linear-gradient(
+
+    90deg,
+
+    var(--primary),
+
+    var(--primary-light)
+
+    );
+
+
+    animation:progressLoad 1.5s ease;
+
+
+}
+
+
+
+
+
+
+
+.backup-buttons{
+
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+
+
+.backup-buttons button{
+
+
+    flex:1;
+
+    min-width:200px;
+
+    padding:15px;
+
+
+    border:none;
+
+    border-radius:14px;
+
+
+    background:linear-gradient(
+
+    135deg,
+
+    var(--primary),
+
+    var(--primary-light)
+
+    );
+
+
+    color:white;
+
+    font-family:"Cairo",sans-serif;
+
+    font-size:15px;
+
+
+    cursor:pointer;
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+
+
+.backup-buttons button:hover{
+
+
+    transform:translateY(-4px);
+
+
+    box-shadow:
+
+    0 15px 30px rgba(22,163,74,.25);
+
+
+}
+
+
+
+
+
+
+
+.restore-btn{
+
+
+    background:linear-gradient(
+
+    135deg,
+
+    #059669,
+
+    #10b981
+
+    ) !important;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+                SYSTEM SETTINGS
+===================================================== */
+
+
+.setting-row strong{
+
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+
+
+@media(max-width:1100px){
+
+
+    .settings-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+    .info-grid{
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+
+    .settings-page{
+
+
+        gap:18px;
+
+
+    }
+
+
+
+
+    .settings-page .card{
+
+
+        padding:20px;
+
+
+        border-radius:18px;
+
+
+    }
+
+
+
+
+    .card-header h2{
+
+
+        font-size:19px;
+
+
+    }
+
+
+
+
+    .info-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+    .setting-row{
+
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+
+    }
+
+
+
+
+
+    .setting-row strong{
+
+
+        align-self:flex-end;
+
+
+    }
+
+
+
+
+
+    .form-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+    .backup-buttons{
+
+
+        flex-direction:column;
+
+
+    }
+
+
+
+
+
+    .backup-buttons button{
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+
+    .save-settings{
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+
+
+    .save-settings button{
+
+
+        width:100%;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:480px){
+
+
+
+    .settings-page .card{
+
+
+        padding:16px;
+
+
+    }
+
+
+
+
+
+    .profile-top img{
+
+
+        width:95px;
+
+        height:95px;
+
+
+    }
+
+
+
+
+
+    .profile-top h3{
+
+
+        font-size:20px;
+
+
+    }
+
+
+
+
+
+    .profile-info p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+    .setting-row h4{
+
+
+        font-size:15px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+                    ANIMATIONS
+===================================================== */
+
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+@keyframes progressLoad{
+
+
+    from{
+
+
+        width:0;
+
+
+    }
+
+
+
+    to{
+
+
+        width:75%;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+                    BUTTON EFFECT
+===================================================== */
+
+
+.settings-page button{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.settings-page button:active{
+
+
+    transform:scale(.97);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+                    END SETTINGS CSS
+                    Tamkeen ERP
+===================================================== */
